@@ -698,7 +698,7 @@ html {
 
 .accordion_item:hover {
   opacity: 0.9;
-  border-bottom: 1px solid #8529e9;
+  // border-bottom: 1px solid #8529e9;
   transition: 0.5s;
 }
 
@@ -1111,7 +1111,8 @@ footer {
 }
 
 .accordion_item:hover span {
-  color: #8529e9;
+  // color: #8529e9;
+  color: var(--grey-scale-05);
   transition: 0.5s;
 }
 
