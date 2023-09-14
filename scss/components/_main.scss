@@ -295,10 +295,14 @@
   gap: 3px;
 }
 
+.imgs-mobile {
+  display: none;
+}
+
 .bluetransfer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
   #wallet {
     // width: 40px;
@@ -418,6 +422,12 @@
       word-wrap: break-word;
     }
   }
+}
+
+.imgs-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .cadastrar-number {
@@ -758,5 +768,137 @@
 
   img {
     width: 101px;
+  }
+}
+
+.cards-plataforma-swiper {
+  display: none;
+}
+
+@media (max-width: 1035px) {
+  .btn-menu-a {
+    display: none;
+  }
+
+  .card-tc {
+    width: 100%;
+  }
+
+  .main-text-banner h1 {
+    // Agora o TC conecta pessoas e empresas por todo o mundo!
+    color: #fafafa;
+    font-size: 42px;
+    font-family: Bennet Banner Extra Condensed;
+    font-weight: 700;
+    line-height: 52.08px;
+    word-wrap: break-word;
+  }
+
+  // .text-banner-cambio {
+  //   justify-content: center;
+  // }
+
+  .main-text-banner span {
+    // Câmbio com BENEFÍCIOS para nossa comunidade.
+    color: #fafafa;
+    font-size: 24px;
+    font-family: Bw Seido Raw;
+    font-weight: 400;
+    line-height: 31.68px;
+    word-wrap: break-word;
+  }
+
+  .text-plataforma span {
+    // Nova plataforma de câmbio
+    color: #344ff4;
+    font-size: 24px;
+    font-family: Bw Seido Raw;
+    font-weight: 400;
+    line-height: 31.68px;
+    word-wrap: break-word;
+  }
+
+  .text-plataforma h1 {
+    color: #fafafa;
+    font-size: 24px;
+    font-family: Bw Seido Raw;
+    font-weight: 400;
+    line-height: 31.68px;
+    word-wrap: break-word;
+  }
+
+  .text-plataforma h1 span {
+    color: #fafafa;
+    font-size: 28px;
+    font-family: Bw Seido Raw;
+    font-weight: 700;
+    line-height: 36.96px;
+    word-wrap: break-word;
+  }
+
+  .container-cards-plataforma {
+    display: none;
+  }
+
+  .cards-plataforma-swiper {
+    display: block;
+  }
+}
+
+.slides-moedas {
+  width: auto !important;
+}
+
+.wrapper-fundos {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.swiper-pagination-fundos {
+  .swiper-pagination-bullet {
+    background-color: #c6c6c6;
+    transition: 0.3s ease-in-out;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #344ff4;
+    transition: 0.3s ease-in-out;
+
+    width: 64px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+}
+
+@media (max-width: 1171px) {
+  .novidades-title {
+    flex-direction: column;
+
+    h1 {
+      width: 100%;
+      padding-bottom: 24px;
+    }
+
+    h4 {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1210px) {
+  .imgs-mobile {
+    display: block;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .imgs-main {
+    display: none;
   }
 }

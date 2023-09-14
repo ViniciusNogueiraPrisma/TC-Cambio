@@ -4964,10 +4964,14 @@ body.open-menu::after {
   gap: 3px;
 }
 
+.imgs-mobile {
+  display: none;
+}
+
 .bluetransfer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .bluetransfer #wallet {
   width: 3.125vw;
@@ -5071,6 +5075,12 @@ body.open-menu::after {
   font-weight: 700;
   line-height: 30px;
   word-wrap: break-word;
+}
+
+.imgs-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .cadastrar-number h1 {
@@ -5370,6 +5380,113 @@ body.open-menu::after {
   width: 101px;
 }
 
+.cards-plataforma-swiper {
+  display: none;
+}
+
+@media (max-width: 1035px) {
+  .btn-menu-a {
+    display: none;
+  }
+  .card-tc {
+    width: 100%;
+  }
+  .main-text-banner h1 {
+    color: #fafafa;
+    font-size: 42px;
+    font-family: Bennet Banner Extra Condensed;
+    font-weight: 700;
+    line-height: 52.08px;
+    word-wrap: break-word;
+  }
+  .main-text-banner span {
+    color: #fafafa;
+    font-size: 24px;
+    font-family: Bw Seido Raw;
+    font-weight: 400;
+    line-height: 31.68px;
+    word-wrap: break-word;
+  }
+  .text-plataforma span {
+    color: #344ff4;
+    font-size: 24px;
+    font-family: Bw Seido Raw;
+    font-weight: 400;
+    line-height: 31.68px;
+    word-wrap: break-word;
+  }
+  .text-plataforma h1 {
+    color: #fafafa;
+    font-size: 24px;
+    font-family: Bw Seido Raw;
+    font-weight: 400;
+    line-height: 31.68px;
+    word-wrap: break-word;
+  }
+  .text-plataforma h1 span {
+    color: #fafafa;
+    font-size: 28px;
+    font-family: Bw Seido Raw;
+    font-weight: 700;
+    line-height: 36.96px;
+    word-wrap: break-word;
+  }
+  .container-cards-plataforma {
+    display: none;
+  }
+  .cards-plataforma-swiper {
+    display: block;
+  }
+}
+.slides-moedas {
+  width: auto !important;
+}
+
+.wrapper-fundos {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.swiper-pagination-fundos .swiper-pagination-bullet {
+  background-color: #c6c6c6;
+  transition: 0.3s ease-in-out;
+}
+.swiper-pagination-fundos .swiper-pagination-bullet-active {
+  background-color: #344ff4;
+  transition: 0.3s ease-in-out;
+  width: 64px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+@media (max-width: 1171px) {
+  .novidades-title {
+    flex-direction: column;
+  }
+  .novidades-title h1 {
+    width: 100%;
+    padding-bottom: 24px;
+  }
+  .novidades-title h4 {
+    width: 100%;
+  }
+}
+@media (max-width: 1210px) {
+  .imgs-mobile {
+    display: block;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+  .imgs-main {
+    display: none;
+  }
+}
 @font-face {
   font-family: "Bw Seido Raw";
   src: url("../../fonts/Seido/Bw Seido Raw Regular.otf");
@@ -5920,26 +6037,6 @@ html {
   display: flex;
   gap: 24px;
   width: 426px !important;
-}
-
-.swiper-pagination-fundos {
-  display: flex;
-  justify-content: center;
-  padding-top: 40px;
-}
-.swiper-pagination-fundos .swiper-pagination-bullet {
-  transition: 0.5s ease-in-out;
-  background-color: var(--text-grey-scale-09);
-  width: 12px;
-  border-radius: 4px;
-  height: 6px;
-}
-.swiper-pagination-fundos .swiper-pagination-bullet-active {
-  transition: 0.5s ease-in-out;
-  background-color: black;
-  width: 80px;
-  height: 6px;
-  border-radius: 4px;
 }
 
 .accordion_item:hover {
@@ -6702,12 +6799,6 @@ footer {
 }
 
 @media (max-width: 1200px) {
-  .navbar-items {
-    display: none;
-  }
-  .list-menu {
-    display: none;
-  }
   .search-btn {
     display: none;
   }
@@ -9316,9 +9407,6 @@ body {
   color: white;
   background-color: #333333;
   transition: 0.5s;
-}
-[data-theme=dark] .swiper-pagination-fundos .swiper-pagination-bullet {
-  background-color: white;
 }
 [data-theme=dark] .accordion_header span {
   color: white;
