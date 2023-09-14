@@ -109,6 +109,9 @@
 
 .section-plataforma {
   background-color: #000000;
+  background-image: url("../../images/bg-main-cambio.png");
+  background-repeat: no-repeat;
+  background-position: cover;
 }
 
 .container-plataforma {
@@ -289,6 +292,7 @@
   border: 2px solid rgb(211, 211, 211);
   margin-top: -80px;
   background-color: #fafafa;
+  gap: 3px;
 }
 
 .bluetransfer {
@@ -297,7 +301,8 @@
   justify-content: space-between;
 
   #wallet {
-    width: 40px;
+    // width: 40px;
+    width: 3.125vw;
   }
 
   #brl-azul {
@@ -717,6 +722,7 @@
   padding-bottom: 16px;
   align-items: center;
   display: flex;
+  gap: 24px;
   justify-content: space-between;
 }
 

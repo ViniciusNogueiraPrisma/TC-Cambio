@@ -4795,6 +4795,9 @@ body.open-menu::after {
 
 .section-plataforma {
   background-color: #000000;
+  background-image: url("../../images/bg-main-cambio.png");
+  background-repeat: no-repeat;
+  background-position: cover;
 }
 
 .container-plataforma {
@@ -4958,6 +4961,7 @@ body.open-menu::after {
   border: 2px solid rgb(211, 211, 211);
   margin-top: -80px;
   background-color: #fafafa;
+  gap: 3px;
 }
 
 .bluetransfer {
@@ -4966,7 +4970,7 @@ body.open-menu::after {
   justify-content: space-between;
 }
 .bluetransfer #wallet {
-  width: 40px;
+  width: 3.125vw;
 }
 .bluetransfer #brl-azul {
   width: 214px;
@@ -5332,6 +5336,7 @@ body.open-menu::after {
   padding-bottom: 16px;
   align-items: center;
   display: flex;
+  gap: 24px;
   justify-content: space-between;
 }
 
@@ -6634,7 +6639,7 @@ footer {
 
 .dropdown-item:hover {
   color: white;
-  background-color: #b381e8;
+  background-color: #6f81f7;
 }
 
 .navbar-nav {
