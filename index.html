@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TC Câmbio</title>
+
+    <link preload rel="stylesheet" href="./vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="./vendor/basic-table.min.css" />
+
+    <link rel="stylesheet" href="./vendor/slick.min.css" />
+    <link rel="stylesheet" href="./vendor/slick-theme.min.css" />
+    <link rel="stylesheet" href="./vendor/aos.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://template.riweb.com.br/prisma/css/stories.dist.min.css"
+      media="all"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Slabo+27px&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/8c2d2553fe.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <link rel="icon" href="./images/favicon-152px.png" type="image/x-icon" />
+    <meta property="og:image" content="./images/thumb-pandhora.jpg" />
+
+    <!-- <link rel="stylesheet" href="./css/import.dist.min.css" /> -->
+
+    <link rel="stylesheet" href="./scss/import.css" />
+
+    <script src="vendor/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="acessibillity-bar">
+      <div class="container container-responsivo-full">
+        <div class="content">
+          <div class="right-top-header">
+            <div class="accessibility-tools">
+              <a href="/acessibilidade"> <small> Acessibilidade </small> </a>
+
+              <button
+                id="contrast-toggle"
+                type="button"
+                class="tool"
+                data-bs-toggle="tooltip"
+                data-bs-trigger="hover"
+                data-bs-placement="bottom"
+                title=""
+                data-bs-original-title="Contraste"
+              >
+                <span class="icon-contraste"></span>
+              </button>
+
+              <button
+                id="increaseFont"
+                type="button"
+                class="tool aumentar-fonte"
+                data-bs-toggle="tooltip"
+                data-bs-trigger="hover"
+                data-bs-placement="bottom"
+                title=""
+                data-bs-original-title="Aumentar o tamanho da fonte"
+              >
+                <span class="icon-aumentar-fonte" accesskey="4"></span>
+              </button>
+
+              <button
+                id="decreaseFont"
+                type="button"
+                class="tool"
+                data-bs-toggle="tooltip"
+                data-bs-trigger="hover"
+                data-bs-placement="bottom"
+                title=""
+                data-bs-original-title="Diminuir o tamanho da fonte"
+              >
+                <span class="icon-diminuir-fonte" accesskey="5"></span>
+              </button>
+            </div>
+
+            <div class="idiomas">
+              <a
+                id="hlkCulturaPtBr"
+                accesskey="7"
+                data-bs-toggle="tooltip"
+                data-bs-trigger="hover"
+                data-bs-placement="bottom"
+                title=""
+                class="active"
+                href="javascript:__doPostBack('ctl00$hlkCulturaPtBr','')"
+                data-bs-original-title="Mudar para português"
+              >
+                <span>PT</span>
+              </a>
+              <a
+                id="hlkCulturaEnUS"
+                accesskey="8"
+                data-bs-toggle="tooltip"
+                data-bs-trigger="hover"
+                data-bs-placement="bottom"
+                title=""
+                href="javascript:__doPostBack('ctl00$hlkCulturaEnUS','')"
+                data-bs-original-title="Mudar para inglês"
+              >
+                <span>EN</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar headerFixoMenu">
+      <div class="container-sm navbar-after">
+        <a href="index.html">
+          <div class="logo">
+            <img
+              class="logo-black-home"
+              src="./images/logo-cambio.png"
+              alt=""
+            />
+            <img
+              src="./images/logo-pandhora-white.png"
+              alt=""
+              class="logo-white-home"
+            />
+          </div>
+        </a>
+
+        <div class="list-menu">
+          <ul class="navbar-nav">
+            <div class="navbar-items">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sobre
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="quem-somos.html"
+                      >Quem Somos</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown hover-dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Como Funciona
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="fundos.html">Essencial</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="fundos.html">Long Bias</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="fundos.html">TC Cosmos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="fundos.html"
+                      >Digital Assets</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown" href="documentos.html">
+                <a
+                  class="nav-link"
+                  href="documentos.html"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  Perguntas Frequentes
+                </a>
+              </li>
+
+              <li class="nav-item dropdown" href="documentos.html">
+                <a class="btn-menu-a"> Quero me cadastrar </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+
+        <!-- <div class="search-btn">
+          <button
+            type="button"
+            class="open-searchbox btnSearch"
+            data-bs-toggle="tooltip"
+            data-bs-trigger="hover"
+            data-bs-placement="bottom"
+            accesskey="2"
+            title=""
+            data-bs-original-title="Pesquisar"
+          >
+            <i class="icon-busca"></i>
+          </button>
+        </div> -->
+
+        <!-- <div class="btns-menu">
+          <div class="btns-items btn1">
+            <a href="/withelabel.html" class="abrir-conta">
+              <span>Abrir conta</span>
+            </a>
+            <img src="./images/icons/icon-carteira.svg" alt="" />
+          </div>
+
+          <div class="btns-items btn2">
+            <a href="" class="abrir-conta">
+              <span>Login</span>
+            </a>
+            <img src="./images/icons/profile-bold.svg" alt="" />
+          </div>
+
+          <div class="btn-menu">
+            <button
+              type="button"
+              class="toggle-mobile-menu"
+              aria-label="Abrir Menu"
+            >
+              <span class="icon-nav" title="Abrir Menu"></span>
+            </button>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="container-sm navbar-btns-after">
+        <div class="content-btns-after">
+          <div class="btn-navbar-1">
+            <a href="./withelabel.html">Abrir conta</a>
+            <img src="./images/icons/icon-carteira.svg" alt="" />
+          </div>
+          <div class="btn-navbar-2">
+            <a href="">Login</a>
+            <img src="./images/icons/profile-bold.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="searchbox">
+      <div class="container container-responsivo-full">
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Digite aqui a sua busca"
+          />
+
+          <div class="input-group-text">
+            <button
+              type="button"
+              class="close-searchbox"
+              aria-label="Fechar Modal de Pesquiasr"
+            >
+              <span class="icon-exibir"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="search-help">
+          <small>Aperte Enter para pesquisar</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+
+    <aside class="mobile-menu-div">
+      <div class="">
+        <div class="mobile-menu">
+          <div class="header-menu">
+            <div class="div-menu-open">
+              <!-- <div class="button-storys-open">
+                <button class="openStorys" type="button">
+                  <span class="text-stories">Stories RI</span>
+                  <span class="icon-button-stories">
+                    <i class="icon-stories"></i>
+                  </span>
+                </button>
+              </div> -->
+              <button
+                title="Fechar"
+                class="toggle-mobile-menu"
+                aria-label="Fechar Menu"
+              >
+                <span class="icon-nav"></span>
+              </button>
+            </div>
+            <a class="logo-header" href=":javascript">
+              <picture class="branding">
+                <img
+                  class="logo-mobile"
+                  src="./images/logo-white-pandhora-tc.png"
+                  alt="TC"
+                />
+              </picture>
+            </a>
+          </div>
+          <div class="container-sm">
+            <div class="middle-header">
+              <div class="menu-tools">
+                <div class="div-pesquisar-mobile">
+                  <!-- <button
+                    type="button"
+                    class="pesquisar-button"
+                    data-bs-toggle="tooltip"
+                    data-bs-trigger="hover"
+                    data-bs-placement="bottom"
+                    title="Pesquisar"
+                    aria-label="Pesquisar"
+                  >
+                    <img src="./images/icons/icon-busca.svg" alt="Pesquisar" />
+                  </button> -->
+                  <input
+                    name="ctl00$searchId"
+                    type="text"
+                    id="searchId"
+                    class="inputBuscaMobile"
+                    placeholder="Digite aqui a sua busca"
+                  />
+                </div>
+                <p>Aperte Enter para pesquisar</p>
+              </div>
+              <div class="institucional-and-language">
+                <div class="flex-relacoes-institucional">
+                  <p>Relações com Investidores</p>
+                  <a href="" target="_blank"> Institucional </a>
+                </div>
+
+                <ul>
+                  <li id="btnPt" class="active">
+                    <a
+                      href="javascript:__doPostBack('ctl00$ctl00$hlkCulturaPtBr','')"
+                    >
+                      PT
+                    </a>
+                  </li>
+                  <li id="btnEn">
+                    <a
+                      href="javascript:__doPostBack('ctl00$ctl00$hlkCulturaEnUS','')"
+                    >
+                      EN
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="menu-body">
+              <nav class="accordion nav-mobile" id="accordionMenuMobile">
+                <div class="accordion-item">
+                  <h3>
+                    <button
+                      type="button"
+                      class="accordion-button collapsed"
+                      aria-expanded="false"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#mobile-menu-1"
+                      aria-controls="mobile-menu-1"
+                    >
+                      Sobre a Pandhora
+                    </button>
+                  </h3>
+
+                  <div
+                    id="mobile-menu-1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionMenuMobile"
+                  >
+                    <div class="accordion-body">
+                      <ul class="pages">
+                        <li class="item link-externo">
+                          <a href="quem-somos.html">Quem Somos</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h3>
+                    <button
+                      type="button"
+                      class="accordion-button collapsed"
+                      aria-expanded="false"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#mobile-menu-2"
+                      aria-controls="mobile-menu-2"
+                    >
+                      Nossos Fundos
+                    </button>
+                  </h3>
+
+                  <div
+                    id="mobile-menu-2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionMenuMobile"
+                  >
+                    <div class="accordion-body">
+                      <ul class="pages">
+                        <li class="item">
+                          <a href="diretoria-executiva.html">Essencial</a>
+                        </li>
+
+                        <li class="item">
+                          <a href="diretoria-executiva.html">Long Bias</a>
+                        </li>
+
+                        <li class="item">
+                          <a href="diretoria-executiva.html">TC Cosmos</a>
+                        </li>
+
+                        <li class="item">
+                          <a href="diretoria-executiva.html">Digital Assets</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h3>
+                    <button
+                      type="button"
+                      class="accordion-button collapsed"
+                      aria-expanded="false"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#mobile-menu-3"
+                      aria-controls="mobile-menu-3"
+                    >
+                      Documentos
+                    </button>
+                  </h3>
+
+                  <div
+                    id="mobile-menu-3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionMenuMobile"
+                  >
+                    <div class="accordion-body">
+                      <ul class="pages">
+                        <li class="item">
+                          <a href="central-resultados.html">Créditos</a>
+                        </li>
+                        <li class="item">
+                          <a href="documentos-cvm.html">Pagamentos</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h3>
+                    <button
+                      type="button"
+                      class="accordion-button collapsed"
+                      aria-expanded="false"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#mobile-menu-4"
+                      aria-controls="mobile-menu-4"
+                    >
+                      Fale Conosco
+                    </button>
+                  </h3>
+
+                  <div
+                    id="mobile-menu-4"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionMenuMobile"
+                  >
+                    <div class="accordion-body">
+                      <ul class="pages">
+                        <li class="item">
+                          <a href="central-resultados.html">Contato</a>
+                        </li>
+                        <li class="item">
+                          <a href="documentos-cvm.html"
+                            >Cadastre-se no mailing</a
+                          >
+                        </li>
+                        <li class="item">
+                          <a href="documentos-cvm.html">Termos e condições</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <div class="banner-cambio">
+      <div class="container-sm text-banner-cambio">
+        <div class="main-text-banner">
+          <h1>
+            Agora o TC conecta pessoas e <br />
+            empresas por todo o mundo!
+          </h1>
+          <span>Câmbio com BENEFÍCIOS para nossa comunidade.</span>
+          <a href="">Quero me cadastrar</a>
+        </div>
+      </div>
+
+      <img src="/images/bg-cambio.png" alt="" />
+    </div>
+
+    <div class="section-plataforma">
+      <div class="container-sm container-plataforma">
+        <div class="text-plataforma">
+          <span>Nova plataforma de câmbio</span>
+          <h1>
+            TC Câmbio convida a maior comunidade da América Latina para uma
+            <span>NOVA EXPERIÊNCIA 100% online e 24 horas por dia</span> para
+            realizar suas Transferências Internacionais.
+          </h1>
+        </div>
+
+        <div class="container-cards-plataforma">
+          <div class="cards-plataforma">
+            <div class="bandeira1">
+              <img src="./images/bandeiras/brasil.png" alt="" />
+              <span>BRL</span>
+            </div>
+            <div class="arrows-bandeira">
+              <img src="./images/bandeiras/arrow-gray.png" alt="" />
+              <img src="./images/bandeiras/arrow-blue.png" alt="" />
+            </div>
+
+            <div class="bandeira1">
+              <img src="./images/bandeiras/usa.png" alt="" />
+              <span>USD</span>
+            </div>
+          </div>
+
+          <div class="cards-plataforma">
+            <div class="bandeira1">
+              <img src="./images/bandeiras/brasil.png" alt="" />
+              <span>BRL</span>
+            </div>
+            <div class="arrows-bandeira">
+              <img src="./images/bandeiras/arrow-gray.png" alt="" />
+              <img src="./images/bandeiras/arrow-blue.png" alt="" />
+            </div>
+
+            <div class="bandeira1">
+              <img src="./images/bandeiras/aud.png" alt="" />
+              <span>AUD</span>
+            </div>
+          </div>
+
+          <div class="cards-plataforma">
+            <div class="bandeira1">
+              <img src="./images/bandeiras/brasil.png" alt="" />
+              <span>BRL</span>
+            </div>
+            <div class="arrows-bandeira">
+              <img src="./images/bandeiras/arrow-gray.png" alt="" />
+              <img src="./images/bandeiras/arrow-blue.png" alt="" />
+            </div>
+
+            <div class="bandeira1">
+              <img src="./images/bandeiras/europeia.png" alt="" />
+              <span>EUR</span>
+            </div>
+          </div>
+
+          <div class="cards-plataforma">
+            <div class="bandeira1">
+              <img src="./images/bandeiras/brasil.png" alt="" />
+              <span>BRL</span>
+            </div>
+            <div class="arrows-bandeira">
+              <img src="./images/bandeiras/arrow-gray.png" alt="" />
+              <img src="./images/bandeiras/arrow-blue.png" alt="" />
+            </div>
+
+            <div class="bandeira1">
+              <img src="./images/bandeiras/japan.png" alt="" />
+              <span>JPY</span>
+            </div>
+          </div>
+
+          <div class="cards-plataforma">
+            <div class="bandeira1">
+              <img src="./images/bandeiras/brasil.png" alt="" />
+              <span>BRL</span>
+            </div>
+            <div class="arrows-bandeira">
+              <img src="./images/bandeiras/arrow-gray.png" alt="" />
+              <img src="./images/bandeiras/arrow-blue.png" alt="" />
+            </div>
+
+            <div class="bandeira1">
+              <img src="./images/bandeiras/china.png" alt="" />
+              <span>CNY</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-card-tc">
+          <div class="card-tc">
+            <h1>
+              Nós do TC, <br />
+              damos boas-vindas <span>à você!</span>
+            </h1>
+
+            <h3>
+              Elegemos a plataforma online blueTransfer como provedora da
+              solução cambial para que você e/ou sua empresa realize com toda a
+              <span>PRATICIDADE, AGILIDADE e SEGURANÇA</span> suas
+              transferências internacionais.
+            </h3>
+          </div>
+        </div>
+
+        <div class="novidades-tc">
+          <div class="novidades-title">
+            <h1>
+              Gostou da novidade? <br />
+              Então venha com a gente!
+            </h1>
+            <h4>
+              Com apenas poucos passos você cria seu cadastro e aproveita a
+              melhor EXPERIÊNCIA da parceria blueTransfer e TC:
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-sm">
+      <div class="bluetransfer">
+        <img id="wallet" src="./images/icons/icon_wallet.png" alt="" />
+        <img id="brl-azul" src="./images/icons/icon-brl-azul.png" alt="" />
+        <img id="cambio-icon" src="./images/icons/icon-tc-cambio.png" alt="" />
+        <img id="icon-setas" src="./images/icons/icon-setas.png" alt="" />
+        <img
+          id="img-bluetransfer"
+          src="./images/icons/icon-bluetransfer.png"
+          alt=""
+        />
+        <img
+          id="img-brl-verde"
+          src="./images/icons/icon-brl-verde.png"
+          alt=""
+        />
+        <img id="icon-globe" src="./images/icons/icon-globe.png" alt="" />
+      </div>
+    </div>
+
+    <div class="container-sm fechamento-cambio">
+      <div class="fechamento-title">
+        <h1>
+          Como realizar <br />
+          seu Fechamento de Câmbio <br />
+          por meio da plataforma?
+        </h1>
+        <h3>
+          <span>Sua remessa de forma fácil e intuitiva</span> Salve, repita a
+          operação e acompanhe o seu histórico de fechamento sempre que
+          necessário.
+        </h3>
+      </div>
+
+      <div class="container-cadastrar">
+        <div class="cadastrar-itens">
+          <div class="cadastrar-texts">
+            <h1>Cadastre-se</h1>
+            <h3>
+              Efetue o <span>cadastro online</span> de forma rápida e sem
+              burocracia, são necessárias apenas algumas informações e
+              documentos.
+            </h3>
+          </div>
+
+          <div class="cadastrar-number">
+            <h1>01</h1>
+          </div>
+
+          <div class="cadastrar-cards">
+            <img src="./images/modal1.png" alt="" />
+          </div>
+        </div>
+
+        <div class="cadastrar-itens">
+          <div class="cadastrar-cards2">
+            <img class="modal2" src="./images/modal2.png" alt="" />
+          </div>
+
+          <div class="cadastrar-number">
+            <h1>02</h1>
+          </div>
+
+          <div class="cadastrar-texts">
+            <h1>Confirme a Operação</h1>
+            <h3>
+              Com o cadastro aprovado, selecione o tipo da
+              <span
+                >operação <br />
+                internacional</span
+              >
+              e siga os passos através de nosso processo guiado e inclua as
+              informações de sua remessa para o exterior.
+            </h3>
+          </div>
+        </div>
+
+        <div class="cadastrar-itens">
+          <div class="cadastrar-texts">
+            <h1>Efetue o Pagamento</h1>
+            <h3>
+              Ao confirmar sua operação internacional realize o
+              <span>pagamento do total calculado em reais via TED</span> a
+              partir de seu banco para a conta corrente indicada na plataforma..
+            </h3>
+          </div>
+
+          <div class="cadastrar-number">
+            <h1>03</h1>
+          </div>
+
+          <div class="cadastrar-cards3">
+            <img src="./images/modal3.png" alt="" />
+          </div>
+        </div>
+
+        <div class="cadastrar-itens">
+          <div class="cadastrar-cards4">
+            <img class="modal2" src="./images/modal4.png" alt="" />
+          </div>
+
+          <div class="cadastrar-number">
+            <h1>04</h1>
+          </div>
+
+          <div class="cadastrar-texts">
+            <h1>Valor Transferido</h1>
+            <h3>
+              Identificado o pagamento, sua remessa segue para registo no Banco
+              Central do Brasil e envio para o exterior
+              <span>podendo até ser concluída no mesmo dia.</span> Consulte
+              disponibilidade.
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="title-novidades">
+        <h1>
+          Gostou da novidade? <br />
+          Então venha com a gente!
+        </h1>
+
+        <a href="">Quero me cadastrar</a>
+      </div>
+    </div>
+
+    <div class="section-faq">
+      <div class="container-sm container-faq">
+        <div class="contatos-faq">
+          <div class="infos1">
+            <img src="./images/icons/icon-g-phone.png" alt="" />
+            <div class="texts-infos1">
+              <span>Em caso de dúvidas, fale com nossos</span>
+              <h1>Especialistas <span>ou</span> fale conosco ?</h1>
+            </div>
+          </div>
+          <div class="infos2">
+            <h1>
+              tccambio@tc.com.br <br />
+              Venha para o TC Câmbio !
+            </h1>
+          </div>
+        </div>
+
+        <div class="itens-faq">
+          <div class="accordion-home">
+            <div class="titles-accordion">
+              <h1
+                data-aos="fade-up"
+                data-aos-delay="200"
+                class="aos-init aos-animate"
+              >
+                Perguntas Frequentes
+              </h1>
+
+              <span class="span-accordion"
+                >Tire suas dúvidas sobre a parceria TC e a blueTransfer,<br />
+                sua nova plataforma de transferências internacionais
+                online</span
+              >
+            </div>
+
+            <div
+              class="accordion_item aos-init aos-animate"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="accordion_header">
+                <span>
+                  01. Tenho uma conta internacional com outra fintech. Posso
+                  fazer uma remessa para essa conta internacional via TC Câmbio?
+                </span>
+                <div class="icon"><i class="fa-solid fa-plus themas"></i></div>
+              </div>
+
+              <div class="accordion_content" style="height: 0px">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Labore mollitia qui provident voluptatibus minus quidem, eum
+                  illum sed quo molestias assumenda et explicabo sapiente quas
+                  consequatur, tenetur alias est sequi. Lorem ipsum dolor, sit
+                  amet consectetur adipisicing elit. Labore mollitia qui
+                  provident voluptatibus minus quidem, eum illum sed quo
+                  molestias assumenda et explicabo sapiente quas consequatur,
+                  tenetur alias est sequi. Lorem ipsum dolor, sit amet
+                  consectetur adipisicing elit. Labore mollitia qui provident
+                  voluptatibus minus quidem, eum illum sed quo molestias
+                  assumenda et explicabo sapiente quas consequatur, tenetur
+                  alias est sequi. Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit. Labore mollitia qui provident voluptatibus
+                  minus quidem, eum illum sed quo molestias assumenda et
+                  explicabo sapiente quas consequatur, tenetur alias est sequi.
+                  molestias assumenda et explicabo sapiente quas consequatur,
+                  tenetur alias est sequi. Lorem ipsum dolor, sit amet
+                  consectetur adipisicing elit. Labore mollitia qui provident
+                  voluptatibus minus quidem, eum illum sed quo molestias
+                  assumenda et explicabo sapiente quas consequatur, tenetur
+                  alias est sequi. Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit. Labore mollitia qui provident voluptatibus
+                  minus quidem, eum illum sed quo molestias assumenda et Lorem
+                  ipsum dolor, sit amet consectetur adipisicing elit. Labore
+                  mollitia qui provident voluptatibus minus quidem, eum illum
+                  sed quo molestias assumenda et explicabo sapiente quas
+                  consequatur, tenetur alias est sequi. Lorem ipsum dolor, sit
+                  amet consectetur adipisicing elit. Labore mollitia qui
+                  provident voluptatibus minus quidem, eum illum sed quo
+                  molestias assumenda et explicabo sapiente quas consequatur,
+                  tenetur alias est sequi. Lorem ipsum dolor, sit amet
+                  consectetur adipisicing elit. Labore mollitia qui provident
+                  voluptatibus minus quidem, eum illum sed quo molestias
+                  assumenda et explicabo sapiente quas consequatur, tenetur
+                  alias est sequi. Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit. Labore mollitia qui provident voluptatibus
+                  minus quidem, eum illum sed quo molestias assumenda et
+                  explicabo sapiente quas consequatur, tenetur alias est sequi.
+                  molestias assumenda et explicabo sapiente quas consequatur,
+                  tenetur alias est sequi. Lorem ipsum dolor, sit amet
+                  consectetur adipisicing elit. Labore mollitia qui provident
+                  voluptatibus minus quidem, eum illum sed quo molestias
+                  assumenda et explicabo sapiente quas consequatur, tenetur
+                  alias est sequi. Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit. Labore mollitia qui provident voluptatibus
+                  minus quidem, eum illum sed quo molestias assumenda et
+                  explicabo sapiente quas consequatur, tenetur alias est sequi.
+                  explicabo sapiente quas consequatur, tenetur alias est sequi.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="accordion_item aos-init aos-animate"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="accordion_header">
+                <span> 02. Posso receber valores do exterior ? </span>
+                <div class="icon"><i class="fa-solid fa-plus themas"></i></div>
+              </div>
+
+              <div class="accordion_content">
+                <p>Acessando o canal do Youtube</p>
+              </div>
+            </div>
+
+            <div
+              class="accordion_item aos-init aos-animate"
+              data-aos="fade-up"
+              data-aos-delay="800"
+            >
+              <div class="accordion_header">
+                <span>
+                  03. Posso fazer envio de remessas para o exterior ?
+                </span>
+                <div class="icon"><i class="fa-solid fa-plus themas"></i></div>
+              </div>
+
+              <div class="accordion_content">
+                <p>Acessando o canal do Youtube</p>
+              </div>
+            </div>
+            <div
+              class="accordion_item aos-init aos-animate"
+              data-aos="fade-up"
+              data-aos-delay="800"
+            >
+              <div class="accordion_header">
+                <span>
+                  04. A blueTransfer é um serviço de transferências
+                  internacionais confiável ?
+                </span>
+                <div class="icon"><i class="fa-solid fa-plus themas"></i></div>
+              </div>
+
+              <div class="accordion_content">
+                <p>Acessando o canal do Youtube</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-sm container-footer">
+        <div class="logo-social">
+          <div class="logo-contato">
+            <div class="imgs-logo">
+              <img src="./images/logo-white-cambio.png" alt="" />
+            </div>
+
+            <div class="texts-logo-contatos">
+              <h2>Endereço:</h2>
+              <span
+                >R. Leopoldo Couto Magalhães Júnior, 758 - 11° andar - Itaim
+                Bibi, São Paulo - SP, 04542-000</span
+              >
+            </div>
+
+            <div class="texts-logo-contatos">
+              <h2>Endereço:</h2>
+              <span
+                >+55 4003-6048 <br />
+                Nosso time de atendimento está disponível de segunda à
+                sexta-feira, das 09h às 19h.</span
+              >
+            </div>
+
+            <div class="texts-logo-contatos links-footer">
+              <h2>Links:</h2>
+              <span
+                ><a href="#">Termos Condições</a>
+                <a href="#">Política de privacidade</a></span
+              >
+            </div>
+          </div>
+
+          <div class="redes-sociais-footer">
+            <span>Redes Sociais:</span>
+            <div class="imgs-redes">
+              <img src="./images/icons/insta-white.png" alt="" />
+              <img src="./images/icons/linkedin-white.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="bluetransfer-bcb">
+          <div class="logo-blue">
+            <img src="./images/bluetransfer-footer.png" alt="" />
+            <span
+              >Bluetransfer Tecnologia e Serviços Financeiros Ltda - CNPJ
+              07.312.585/0001-24, Correspondente Cambial autorizado pelo Banco
+              Cental do Brasil.</span
+            >
+          </div>
+
+          <div class="logo-bcb">
+            <img src="./images/logo-banco-do-brasil.png" alt="" />
+          </div>
+        </div>
+
+        <div class="texts-footer">
+          <span
+            >TC Advisory Ltda. (“TC Advisory”), inscrita no CNPJ/ME sob o nº
+            47.420.288/0001-17 com sede em São Paulo, no Estado de São Paulo é
+            um prestador de serviços atuante como correspondente bancário, nos
+            termos da Resolução CMN nº 4.935 de 2021 (“Correspondente no país”).
+            O TC Advisory é Correspondente de Câmbio das melhores instituições
+            financeiras autorizadas a operar no Mercado de Câmbio pelo Banco
+            Central do Brasil.</span
+          >
+        </div>
+
+        <div class="prisma-cambio">
+          <span>© Todos os direitos reservados 2023 </span>
+          <img src="./images/Selo Prisma.png" alt="" />
+          <div class="voltar-topo" id="voltar-ao-topo">
+            <span>Voltar ao topo</span>
+            <i class="fa-solid fa-arrow-up" style="color: #bbbbbb"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"
+    ></script>
+
+    <script defer src="vendor/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script defer src="vendor/counterup.js"></script>
+    <script defer src="js/carrosel.js"></script>
+    <script defer src="js/carrosel_home.js"></script>
+    <script defer src="vendor/menuFixo.js"></script>
+    <script defer src="vendor/aos.js"></script>
+    <script defer src="vendor/basic-table.min.js"></script>
+    <script defer src="vendor/slick.min.js"></script>
+    <script defer src="js/zoomScroll.js"></script>
+    <script defer src="js/main.js"></script>
+  </body>
+</html>

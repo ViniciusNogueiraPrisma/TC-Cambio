@@ -1,0 +1,756 @@
+.btn-menu-a {
+  background-color: #344ff4;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 2px;
+  margin-left: 40px;
+
+  // Quero me cadastrar
+  color: #fafafa;
+  font-size: 16px;
+  font-family: "Bw Seido Raw";
+  font-weight: 400;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+.btn-menu-a:hover {
+  color: white;
+}
+
+.banner-cambio img {
+  width: 100%;
+  height: 77.67393561786085vh;
+}
+
+.banner-cambio::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 77.67393561786085vh;
+
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.3701855742296919) 100%,
+    rgba(0, 0, 0, 0.52) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.3701855742296919) 100%,
+    rgba(0, 0, 0, 0.52) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.3701855742296919) 100%,
+    rgba(0, 0, 0, 0.52) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
+
+.text-banner-cambio {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 77.67393561786085vh;
+  z-index: 2;
+  color: white;
+}
+
+.main-text-banner {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    // Agora o TC conecta pessoas e empresas por todo o mundo!
+    color: #fafafa;
+    font-size: 64px;
+    font-family: Bennet Banner Extra Condensed;
+    font-weight: 800;
+    line-height: 79.36px;
+    word-wrap: break-word;
+    padding-bottom: 40px !important;
+  }
+
+  span {
+    // Câmbio com BENEFÍCIOS para nossa comunidade.
+    color: #fafafa;
+    font-size: 28px;
+    font-family: Bw Seido Raw;
+    font-weight: 400;
+    line-height: 36.96px;
+    word-wrap: break-word;
+    padding-bottom: 40px !important;
+  }
+
+  a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 14px;
+    padding-left: 14px;
+    border-radius: 2px;
+    background-color: #344ff4;
+
+    // Quero me cadastrar
+    color: #fafafa;
+    font-size: 20px;
+    font-family: Bw Seido Raw;
+    font-weight: 400;
+    line-height: 25px;
+    word-wrap: break-word;
+    width: fit-content;
+  }
+}
+
+.section-plataforma {
+  background-color: #000000;
+}
+
+.container-plataforma {
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+
+.text-plataforma {
+  width: 47%;
+
+  span {
+    // Nova plataforma de câmbio
+    color: #344ff4;
+    font-size: 28px;
+    font-family: "Bw Seido Raw";
+    font-weight: 400;
+    line-height: 36.96px;
+    word-wrap: break-word;
+  }
+
+  h1 {
+    color: #fafafa;
+    font-size: 28px;
+    font-family: "Bw Seido Raw";
+    font-weight: 400;
+    line-height: 36.96px;
+    word-wrap: break-word;
+    padding-top: 40px;
+
+    span {
+      color: #fafafa;
+      font-size: 28px;
+      font-family: Bw Seido Raw;
+      font-weight: 700;
+      line-height: 36.96px;
+      word-wrap: break-word;
+    }
+  }
+}
+
+.container-cards-plataforma {
+  display: flex;
+  padding-top: 40px;
+  gap: 24px;
+}
+
+.cards-plataforma {
+  padding-top: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 24px;
+
+  background-color: #fafafa;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+
+  .bandeira1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+
+    span {
+      padding-top: 12px !important;
+      // BRL
+      color: #1d1d1d;
+      font-size: 18px;
+      font-family: Bw Seido Raw;
+      font-weight: 700;
+      line-height: 22.5px;
+      word-wrap: break-word;
+    }
+
+    img {
+      width: 30px;
+    }
+  }
+
+  .arrows-bandeira {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    img {
+      width: 34px;
+    }
+  }
+}
+
+.container-card-tc {
+  padding-top: 180px;
+}
+
+.card-tc {
+  padding: 80px;
+  border-radius: 4px;
+  background-color: #fafafa;
+  width: 876px;
+
+  h1 {
+    padding-bottom: 24px;
+    color: #1d1d1d;
+    font-size: 56px;
+    font-family: "Bennet Banner Extra Condensed";
+    font-weight: 700;
+    line-height: 69.44px;
+    word-wrap: break-word;
+
+    span {
+      color: #344ff4;
+      font-size: 56px;
+      font-family: "Bennet Banner Extra Condensed";
+      font-weight: 700;
+      line-height: 69.44px;
+      word-wrap: break-word;
+    }
+  }
+
+  h3 {
+    color: #1d1d1d;
+    font-size: 20px;
+    font-family: "Neue Haas Unica Pro";
+    font-weight: 400;
+    line-height: 30px;
+    word-wrap: break-word;
+
+    span {
+      color: #1d1d1d;
+      font-size: 20px;
+      font-family: "Neue Haas Unica Pro";
+      font-weight: 700 !important;
+      line-height: 30px;
+      word-wrap: break-word;
+    }
+  }
+}
+
+.novidades-tc {
+  padding-top: 112px;
+}
+
+.novidades-title {
+  display: flex;
+  padding-left: 80px;
+  padding-right: 80px;
+
+  h1 {
+    width: 50%;
+    color: white;
+    font-size: 56px;
+    font-family: Bennet Banner Extra Condensed;
+    font-weight: 700;
+    line-height: 69.44px;
+    word-wrap: break-word;
+  }
+
+  h4 {
+    width: 50%;
+    // Com apenas poucos passos você cria seu cadastro<br/>e aproveita a melhor EXPERIÊNCIA da parceria blueTransfer e TC:
+    color: #999999;
+    font-size: 28px;
+    font-family: Bw Seido Raw;
+    font-weight: 400;
+    line-height: 36.96px;
+    word-wrap: break-word;
+  }
+}
+
+.bluetransfer {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  padding-right: 110px;
+  padding-left: 110px;
+  border-radius: 8px;
+  border: 2px solid rgb(211, 211, 211);
+  margin-top: -80px;
+  background-color: #fafafa;
+}
+
+.bluetransfer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  #wallet {
+    width: 40px;
+  }
+
+  #brl-azul {
+    width: 214px;
+  }
+
+  #cambio-icon {
+    width: 156px;
+  }
+
+  #icon-setas {
+    width: 82px;
+  }
+
+  #img-bluetransfer {
+    width: 259px;
+  }
+
+  #img-brl-verde {
+    width: 214px;
+  }
+
+  #icon-globe {
+    width: 40px;
+  }
+}
+
+.fechamento-cambio {
+  padding-top: 140px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 32px;
+}
+
+.fechamento-title {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 32px;
+  padding-left: 80px;
+  padding-right: 80px;
+  border-bottom: 1px solid rgb(203, 202, 202);
+
+  h1 {
+    width: 50%;
+
+    color: #1d1d1d;
+    font-size: 56px;
+    font-family: Bennet Banner Extra Condensed;
+    font-weight: 700;
+    line-height: 69.44px;
+    word-wrap: break-word;
+  }
+
+  h3 {
+    color: #1d1d1d;
+    font-size: 21px;
+    font-family: Bw Seido Raw;
+    font-weight: 500 !important;
+    line-height: 29.4px;
+    word-wrap: break-word;
+    width: 50%;
+
+    span {
+      color: #344ff4;
+      font-size: 21px;
+      font-family: Bw Seido Raw;
+      font-weight: 500;
+      line-height: 29.4px;
+      word-wrap: break-word;
+    }
+  }
+}
+
+.container-cadastrar {
+  padding-top: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 112px;
+}
+
+.cadastrar-itens {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+
+  h1 {
+    // Cadastre-se
+    color: #344ff4;
+    font-size: 34px;
+    font-family: Bennet Banner Extra Condensed;
+    font-weight: 700;
+    line-height: 44.88px;
+    word-wrap: break-word;
+  }
+
+  h3 {
+    color: #1d1d1d;
+    font-size: 20px;
+    font-family: Neue Haas Unica Pro;
+    font-weight: 400;
+    line-height: 30px;
+    word-wrap: break-word;
+
+    span {
+      color: #1d1d1d;
+      font-size: 20px;
+      font-family: Neue Haas Unica Pro;
+      font-weight: 700;
+      line-height: 30px;
+      word-wrap: break-word;
+    }
+  }
+}
+
+.cadastrar-number {
+  // display: none;
+
+  h1 {
+    color: #344ff4;
+    font-size: 200px;
+    font-family: Bennet Banner Extra Condensed;
+    font-weight: 700;
+    line-height: 200px;
+    word-wrap: break-word;
+  }
+}
+
+.cadastrar-cards {
+  width: 27.552083333333332vw;
+  height: 30.11422637590862vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+
+  img {
+    width: 21.770833333333332vw;
+    height: 30.218068535825545vh;
+    margin-top: -40px;
+  }
+}
+
+.cadastrar-texts {
+  width: 27.552083333333332vw;
+}
+
+.cadastrar-cards2 {
+  width: 27.552083333333332vw;
+  height: 6.71875vw;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+
+  .modal2 {
+    width: 20.833333333333332vw;
+    height: 7.1875vw;
+    // margin-bottom: -40px;
+    margin-top: 30px;
+  }
+}
+
+.cadastrar-cards3 {
+  width: 27.552083333333332vw;
+  height: 21.806853582554517vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+
+  img {
+    margin-top: -60px;
+    width: 20.833333333333332vw;
+    height: 22.533748701973vh;
+  }
+}
+
+.cadastrar-cards4 {
+  width: 27.552083333333332vw;
+  height: 17.341640706126686vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+
+  img {
+    margin-top: -60px;
+    width: 17.8125vw;
+    height: 21.079958463136034vh;
+  }
+}
+
+.title-novidades {
+  padding-top: 112px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  h1 {
+    color: #1d1d1d;
+    font-size: 56px;
+    font-family: Bennet Banner Extra Condensed;
+    font-weight: 700;
+    line-height: 69.44px;
+    word-wrap: break-word;
+  }
+
+  a {
+    // Quero me cadastrar
+    color: #fafafa;
+    font-size: 20px;
+    font-family: Bw Seido Raw;
+    font-weight: 400;
+    line-height: 25px;
+    word-wrap: break-word;
+    background-color: #344ff4;
+    width: fit-content;
+    padding: 10px 14px 10px 14px;
+    border-radius: 2px;
+  }
+}
+
+.section-faq {
+  background-color: #000000;
+  margin-top: 100px;
+}
+
+.contatos-faq {
+  background-color: #2d2d2d;
+  border-radius: 8px;
+  padding: 40px;
+  margin-top: -60px;
+  display: flex;
+  gap: 66px;
+  justify-content: center;
+}
+
+.infos1 {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  img {
+    width: 64px;
+  }
+}
+
+.texts-infos1 {
+  span {
+    color: #bbbbbb;
+    font-size: 18px;
+    font-family: Bw Seido Raw;
+    font-weight: 700;
+    line-height: 25.2px;
+    word-wrap: break-word;
+  }
+
+  h1 {
+    color: #bbbbbb;
+    font-size: 28px;
+    font-family: Bw Seido Raw;
+    font-weight: 700;
+    line-height: 36.96px;
+    word-wrap: break-word;
+  }
+}
+
+.infos2 {
+  // tccambio@tc.com.br<br/>Venha para o TC Câmbio !
+
+  h1 {
+    color: #fafafa;
+    font-size: 20px;
+    font-family: Neue Haas Unica Pro;
+    font-weight: 400;
+    line-height: 30px;
+    word-wrap: break-word;
+  }
+}
+
+.titles-accordion {
+  margin-bottom: 32px;
+}
+
+.fa-plus {
+  color: white;
+}
+
+.fa-minus {
+  color: white;
+}
+
+.container-footer {
+  padding-top: 64px;
+  padding-bottom: 40px;
+}
+
+.logo-contato {
+  display: flex;
+  width: 100%;
+  gap: 4.166666666666667vw;
+
+  img {
+    width: 156px;
+  }
+}
+
+.texts-logo-contatos {
+  h2 {
+    // Endereço:
+    color: #fafafa;
+    font-size: 14px;
+    font-family: "Neue Haas Unica Pro";
+    font-weight: 700;
+    line-height: 18.48px;
+    word-wrap: break-word;
+  }
+
+  span {
+    // R. Leopoldo Couto Magalhães Júnior, 758 - 11° andar - Itaim Bibi, São Paulo - SP, 04542-000
+    color: #fafafa;
+    font-size: 14px;
+    font-family: "Neue Haas Unica Pro";
+    font-weight: 400;
+    line-height: 18.48px;
+    word-wrap: break-word;
+
+    a {
+      // Termos e Condições
+      color: #fafafa;
+      font-size: 14px;
+      font-family: Neue Haas Unica Pro;
+      font-weight: 400;
+      line-height: 18.48px;
+      word-wrap: break-word;
+    }
+  }
+}
+
+.links-footer {
+  span {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 200px;
+  }
+}
+
+.redes-sociais-footer {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+
+  span {
+    // Redes Sociais:
+    color: #fafafa;
+    font-size: 14px;
+    font-family: Neue Haas Unica Pro;
+    font-weight: 700;
+    line-height: 18.48px;
+    word-wrap: break-word;
+  }
+
+  .imgs-redes {
+    display: flex;
+    gap: 16px;
+    padding-top: 12px;
+
+    img {
+      width: 24px;
+    }
+  }
+}
+
+.logo-social {
+  display: flex;
+  border-bottom: 1px solid rgb(151, 151, 151);
+  padding-bottom: 24px;
+}
+
+.logo-blue {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+
+  img {
+    width: 151px;
+  }
+
+  span {
+    // Bluetransfer Tecnologia e Serviços Financeiros Ltda - CNPJ 07.312.585/0001-24, Correspondente Cambial autorizado pelo Banco Cental do Brasil.
+    color: #999999;
+    font-size: 14px;
+    font-family: Neue Haas Unica W1G;
+    font-weight: 400;
+    line-height: 22.4px;
+    word-wrap: break-word;
+  }
+}
+
+.logo-bcb {
+  img {
+    width: 142px;
+  }
+}
+
+.bluetransfer-bcb {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.texts-footer {
+  padding-top: 24px;
+
+  span {
+    // TC Advisory Ltda. (“TC Advisory”), inscrita no CNPJ/ME sob o nº 47.420.288/0001-17 com sede em São Paulo, no Estado de São Paulo é um prestador de serviços atuante como correspondente bancário, nos termos da Resolução CMN nº 4.935 de 2021 (“Correspondente no país”). O TC Advisory é Correspondente de Câmbio das melhores instituições financeiras autorizadas a operar no Mercado de Câmbio pelo Banco Central do Brasil.
+    color: #999999;
+    font-size: 14px;
+    font-family: Neue Haas Unica W1G;
+    font-weight: 400;
+    line-height: 22.4px;
+    word-wrap: break-word;
+  }
+}
+
+.prisma-cambio {
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    // © Todos os direitos reservados 2023
+    color: #fafafa;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 19.6px;
+    word-wrap: break-word;
+  }
+
+  img {
+    width: 101px;
+  }
+}
