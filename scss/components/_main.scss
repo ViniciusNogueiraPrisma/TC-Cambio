@@ -1286,3 +1286,86 @@
     }
   }
 }
+
+@media (max-width: 545px) {
+  .texts-main {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .cadastrar-itens h1 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .cadastrar-cards::before {
+    content: "";
+    background-color: #000000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 250px;
+    z-index: -1;
+  }
+
+  .modal1 {
+    height: 250px !important;
+    margin-top: -30px !important;
+  }
+
+  .cadastrar-cards2::before {
+    content: "";
+    background-color: #000000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 129px;
+    z-index: -1;
+  }
+
+  .cadastrar-cards3::before {
+    content: "";
+    background-color: #000000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+  }
+
+  .cadastrar-cards4::before {
+    content: "";
+    background-color: #000000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 157px;
+    z-index: -1;
+  }
+
+  .infos1 {
+    z-index: 2;
+  }
+
+  .infos2 {
+    z-index: 2;
+  }
+
+  .contatos-faq::before {
+    content: "";
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #2d2d2d;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 357px;
+    // border: 10px solid red;
+    z-index: 2;
+  }
+}
