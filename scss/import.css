@@ -4714,6 +4714,7 @@ body.open-menu::after {
   padding-bottom: 10px;
   border-radius: 2px;
   margin-left: 40px;
+  cursor: pointer;
   color: #fafafa;
   font-size: 16px;
   font-family: "Bw Seido Raw";
@@ -5417,6 +5418,9 @@ body.open-menu::after {
   .btn-menu-a {
     display: none;
   }
+  .container-plataforma {
+    padding-top: 148px;
+  }
   .title-novidades h1 {
     font-size: 42px;
     line-height: 56px;
@@ -5538,6 +5542,22 @@ body.open-menu::after {
   }
 }
 @media (max-width: 1210px) {
+  .container-bluetransfer {
+    background-color: #000000;
+  }
+  .fechamento-title h1 {
+    line-height: 52px !important;
+  }
+  .fechamento-title {
+    padding-bottom: 40px !important;
+  }
+  .fechamento-title h3 {
+    margin: 0;
+    padding: 0;
+  }
+  .bluetransfer {
+    margin-bottom: -63px;
+  }
   .number-last {
     display: block;
   }
