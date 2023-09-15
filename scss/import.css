@@ -4729,6 +4729,7 @@ body.open-menu::after {
 .banner-cambio img {
   width: 100%;
   height: 77.6739356179vh;
+  object-fit: cover;
 }
 
 .banner-cambio::before {
@@ -4740,7 +4741,7 @@ body.open-menu::after {
   background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.3701855742) 100%, rgba(0, 0, 0, 0.52) 100%);
   background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.3701855742) 100%, rgba(0, 0, 0, 0.52) 100%);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3701855742) 100%, rgba(0, 0, 0, 0.52) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
 }
 
 .text-banner-cambio {
@@ -4797,7 +4798,7 @@ body.open-menu::after {
   background-color: #000000;
   background-image: url("../../images/bg-main-cambio.png");
   background-repeat: no-repeat;
-  background-position: cover;
+  background-position: center top 80px;
 }
 
 .container-plataforma {
@@ -4838,6 +4839,10 @@ body.open-menu::after {
   display: flex;
   padding-top: 40px;
   gap: 24px;
+}
+
+.prisma-cambio-last {
+  display: none;
 }
 
 .cards-plataforma {
@@ -4952,6 +4957,10 @@ body.open-menu::after {
   word-wrap: break-word;
 }
 
+.itens-footer-last {
+  display: none;
+}
+
 .bluetransfer {
   padding-top: 64px;
   padding-bottom: 64px;
@@ -4997,8 +5006,6 @@ body.open-menu::after {
 
 .fechamento-cambio {
   padding-top: 140px;
-  padding-left: 80px;
-  padding-right: 80px;
   padding-bottom: 32px;
 }
 
@@ -5009,6 +5016,7 @@ body.open-menu::after {
   padding-left: 80px;
   padding-right: 80px;
   border-bottom: 1px solid rgb(203, 202, 202);
+  gap: 24px;
 }
 .fechamento-title h1 {
   width: 50%;
@@ -5106,8 +5114,22 @@ body.open-menu::after {
   margin-top: -40px;
 }
 
+.texts-main {
+  width: 27.5520833333vw;
+}
+
+.modal1 {
+  width: 25.5729166667vw;
+  height: 30.4712041885vh !important;
+}
+
 .cadastrar-texts {
   width: 27.5520833333vw;
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .cadastrar-cards2 {
@@ -5251,7 +5273,6 @@ body.open-menu::after {
 
 .logo-contato {
   display: flex;
-  width: 100%;
   gap: 4.1666666667vw;
 }
 .logo-contato img {
@@ -5316,14 +5337,12 @@ body.open-menu::after {
 
 .logo-social {
   display: flex;
-  border-bottom: 1px solid rgb(151, 151, 151);
-  padding-bottom: 24px;
 }
 
 .logo-blue {
   display: flex;
-  gap: 24px;
-  align-items: center;
+  flex-direction: column;
+  gap: 16px;
 }
 .logo-blue img {
   width: 151px;
@@ -5335,6 +5354,10 @@ body.open-menu::after {
   font-weight: 400;
   line-height: 22.4px;
   word-wrap: break-word;
+}
+
+.bluetransfer-bcb-last {
+  display: none !important;
 }
 
 .logo-bcb img {
@@ -5350,8 +5373,14 @@ body.open-menu::after {
   justify-content: space-between;
 }
 
+.number-last {
+  display: none;
+}
+
 .texts-footer {
   padding-top: 24px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 16px;
 }
 .texts-footer span {
   color: #999999;
@@ -5387,6 +5416,41 @@ body.open-menu::after {
 @media (max-width: 1035px) {
   .btn-menu-a {
     display: none;
+  }
+  .title-novidades h1 {
+    font-size: 42px;
+    line-height: 56px;
+  }
+  .accordion_header {
+    padding-left: 0;
+  }
+  .cadastrar-itens h1 {
+    font-size: 30px;
+  }
+  .fechamento-title h1 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+  .fechamento-title h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .fechamento-title h3 span {
+    font-size: 20px;
+  }
+  .text-plataforma {
+    width: 100%;
+  }
+  .novidades-title {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .itens-faq {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .container-card-tc {
+    padding-top: 148px;
   }
   .card-tc {
     width: 100%;
@@ -5474,17 +5538,253 @@ body.open-menu::after {
   }
 }
 @media (max-width: 1210px) {
+  .number-last {
+    display: block;
+  }
+  .number-last span {
+    color: #344ff4;
+    font-size: 100px;
+    font-family: Bennet Banner Extra Condensed;
+    font-weight: 700;
+    line-height: 100px;
+  }
+  .cadastrar-cards {
+    height: 250px;
+  }
+  .cadastrar-cards2 {
+    width: 100%;
+    height: 129px;
+  }
+  .modal1 {
+    width: 400px !important;
+  }
+  .modal2 {
+    width: 400px !important;
+    height: 138px !important;
+  }
+  .cadastrar-cards3 {
+    width: 100%;
+    height: 200px;
+  }
+  .modal3 {
+    width: 400px !important;
+    height: auto;
+    margin-top: 32px !important;
+  }
+  .cadastrar-cards4 {
+    width: 100%;
+    margin-top: 42px;
+    height: 157px;
+  }
+  .modal4 {
+    width: 400px !important;
+  }
+  .cadastrar-texts-last {
+    flex-direction: column-reverse !important;
+  }
+  .container-cadastrar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .texts-main {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+  }
+  .cadastrar-texts {
+    flex-direction: column;
+  }
+  .cadastrar-cards {
+    width: 100%;
+  }
+  .cadastrar-itens h1 {
+    display: flex;
+  }
+  .cadastrar-itens h1 span {
+    color: #344ff4;
+    font-size: 100px;
+    font-family: Bennet Banner Extra Condensed;
+    font-weight: 700;
+    line-height: 100px;
+    word-wrap: break-word;
+    position: absolute;
+  }
+  .modal1 {
+    width: auto !important;
+  }
   .imgs-mobile {
     display: block;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 16px;
   }
+  #brl-mobile {
+    width: 215px;
+  }
+  #cambio-icon {
+    width: 156px;
+  }
+  #wallet {
+    width: 40px !important;
+  }
+  #arrow-mobile {
+    height: 82px;
+  }
+  #blue-mobile {
+    width: 259px;
+  }
+  #usd-mobile {
+    width: 215px;
+  }
+  #globe-mobile {
+    width: 40px;
+  }
   .imgs-main {
     display: none;
+  }
+  .fechamento-title {
+    flex-direction: column;
+    align-items: start;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 0;
+  }
+  .fechamento-title h1 {
+    width: 100%;
+    padding-bottom: 24px;
+  }
+  .fechamento-title h3 {
+    width: 100%;
+  }
+  .cadastrar-number {
+    display: none;
+  }
+  .contatos-faq {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  .contatos-faq .infos1 {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 1124px) {
+  .logo-social {
+    display: none;
+  }
+  .itens-footer-last {
+    display: block;
+  }
+  .infos-last {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 24px;
+  }
+  .texts-logo-contatos h2 {
+    padding-bottom: 8px;
+    margin: 0;
+  }
+  .links-footer span {
+    display: flex;
+    width: 100%;
+    flex-direction: initial;
+  }
+  .redes-sociais-footer {
+    align-items: start;
+  }
+  .logo-blue {
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+  }
+  .bluetransfer-bcb {
+    display: none;
+  }
+  .imgs-bluetransfer-bcb-last {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .imgs-bluetransfer-bcb-last .img-blue-last {
+    width: 151px;
+    height: 33px;
+  }
+  .imgs-bluetransfer-bcb-last .img-bcb-last {
+    width: 206px;
+  }
+  .bluetransfer-bcb-last {
+    display: block !important;
+  }
+  .bluetransfer-bcb-last span {
+    color: #999999;
+    font-size: 14px;
+    font-family: "Neue Haas Unica Pro";
+    font-weight: 400;
+    line-height: 18px;
+  }
+  .imagem-logo-last img {
+    width: 156px;
+  }
+}
+@media (max-width: 758px) {
+  .infos-last {
+    grid-template-columns: auto;
+    justify-content: start;
+    grid-row-gap: 32px;
+  }
+  .logo-bcb img {
+    width: 649px;
+  }
+  .redes-sociais-footer {
+    flex-direction: initial;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+  .redes-sociais-footer .imgs-redes {
+    padding-top: 0px;
+    gap: 16px;
+  }
+}
+@media (max-width: 580px) {
+  .imgs-bluetransfer-bcb-last {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .prisma-cambio {
+    display: none;
+  }
+  .prisma-cambio-last {
+    display: flex;
+    flex-direction: column;
+  }
+  .prisma-cambio-last .voltar-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 27px;
+  }
+  .prisma-cambio-last .voltar-topo img {
+    width: 156px;
+  }
+  .itens-prisma-last {
+    padding-top: 16px;
+  }
+  .itens-prisma-last span {
+    color: #fafafa;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
   }
 }
 @font-face {
@@ -8399,7 +8699,7 @@ ul.container {
   }
   .navbar-btns-after {
     padding-top: 16px;
-    display: flex !important;
+    display: none !important;
   }
   .navbar-btns-after .content-btns-after {
     display: flex;
