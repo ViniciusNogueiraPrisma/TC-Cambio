@@ -1233,6 +1233,14 @@
     grid-row-gap: 32px;
   }
 
+  .novidades-title h1 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+  .novidades-title h4 {
+    font-size: 19px;
+  }
+
   .logo-bcb img {
     width: 649px;
   }
@@ -1368,10 +1376,54 @@
     // border: 10px solid red;
     z-index: 2;
   }
+
+  .card-tc {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 148px;
+    margin-bottom: 148px;
+  }
+
+  .novidades-tc {
+    padding-top: 0px !important;
+  }
+
+  .container-card-tc {
+    padding-top: 0;
+  }
+
+  .card-tc {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    h1 {
+      z-index: 2;
+      position: relative;
+    }
+
+    h3 {
+      z-index: 2;
+      position: relative;
+    }
+  }
+
+  .card-tc::before {
+    content: "";
+    position: absolute;
+    margin-top: -80px;
+    left: 0;
+    right: 0;
+    height: 630px;
+    background-color: #fafafa;
+    // opacity: 0.5;
+    z-index: 1;
+  }
 }
 
-@media(max-width: 339px) {
+@media (max-width: 339px) {
   .contatos-faq::before {
-   height: 450px;
+    height: 450px;
   }
 }
