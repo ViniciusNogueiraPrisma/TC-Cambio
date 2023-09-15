@@ -14,7 +14,7 @@ $(".titulosCentral").each(function () {
 });
 
 $(document).ready(function () {
-  $("#voltar-ao-topo").click(function (event) {
+  $(".voltar-topo").click(function (event) {
     event.preventDefault();
 
     $("html, body").animate({ scrollTop: 0 }, 800);
