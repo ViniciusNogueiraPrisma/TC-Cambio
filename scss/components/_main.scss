@@ -23,7 +23,8 @@
 
 .banner-cambio img {
   width: 100%;
-  height: 77.67393561786085vh;
+  // height: 77.67393561786085vh;
+  height: 89.63350785340315vh;
   object-fit: cover;
 }
 
@@ -31,7 +32,7 @@
   content: "";
   position: absolute;
   width: 100%;
-  height: 77.67393561786085vh;
+  height: 89.63350785340315vh;
 
   background: rgb(0, 0, 0);
   background: -moz-linear-gradient(
@@ -59,7 +60,7 @@
   width: 100%;
   left: 0;
   right: 0;
-  height: 77.67393561786085vh;
+  height: 89.63350785340315vh;
   z-index: 2;
   color: white;
 }
@@ -111,18 +112,23 @@
 
 .section-plataforma {
   background-color: #000000;
-  background-image: url("../../images/bg-main-cambio.png");
+  // background-image: url("../../images/bg-main-cambio.png");
   background-repeat: no-repeat;
-  background-position: center top 80px;
+  // background-position: center top 80px;
 }
 
 .container-plataforma {
-  padding-top: 180px;
-  padding-bottom: 180px;
+  padding-bottom: 148px;
+}
+
+.change-color-number {
+  transition: 0.5s ease;
+  // color: #bbbbbb;
 }
 
 .text-plataforma {
   width: 47%;
+  padding-top: 180px;
 
   span {
     // Nova plataforma de câmbio
@@ -297,8 +303,8 @@
 .bluetransfer {
   padding-top: 64px;
   padding-bottom: 64px;
-  padding-right: 110px;
-  padding-left: 110px;
+  // padding-right: 110px;
+  // padding-left: 110px;
   border-radius: 8px;
   border: 2px solid rgb(211, 211, 211);
   margin-top: -80px;
@@ -316,8 +322,8 @@
   justify-content: center;
 
   #wallet {
-    // width: 40px;
-    width: 3.125vw;
+    width: 40px;
+    // width: 3.125vw;
   }
 
   #brl-azul {
@@ -393,7 +399,7 @@
 }
 
 .container-cadastrar {
-  padding-top: 80px;
+  padding-top: 120px;
   padding-left: 80px;
   padding-right: 80px;
   display: flex;
@@ -440,7 +446,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 40px;
 }
 
 .cadastrar-number {
@@ -475,13 +481,6 @@
   width: 27.552083333333332vw;
 }
 
-.modal1 {
-  // border: 1px solid red;
-  // width: 491px;
-  width: 25.572916666666668vw;
-  height: 30.471204188481675vh !important;
-}
-
 .cadastrar-texts {
   width: 27.552083333333332vw;
   width: 100%;
@@ -504,7 +503,7 @@
     width: 20.833333333333332vw;
     height: 7.1875vw;
     // margin-bottom: -40px;
-    margin-top: 30px;
+    margin-top: 40px;
   }
 }
 
@@ -517,7 +516,7 @@
   border-radius: 4px;
 
   img {
-    margin-top: -60px;
+    margin-top: 40px;
     width: 20.833333333333332vw;
     height: 22.533748701973vh;
   }
@@ -532,14 +531,14 @@
   border-radius: 4px;
 
   img {
-    margin-top: -60px;
+    margin-top: -75px;
     width: 17.8125vw;
     height: 21.079958463136034vh;
   }
 }
 
 .title-novidades {
-  padding-top: 112px;
+  padding-top: 120px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -665,6 +664,9 @@
     font-weight: 700;
     line-height: 18.48px;
     word-wrap: break-word;
+    margin: 0;
+    padding-bottom: 24px !important;
+    // padding-bottom: 40px !important;
   }
 
   span {
