@@ -852,6 +852,7 @@
   }
 
   .text-plataforma {
+    padding-top: 0;
     width: 100%;
   }
 
@@ -961,6 +962,12 @@
   }
 }
 
+@media(max-width: 1338px) {
+  .imgs-main {
+    gap: 20px;
+  }
+}
+
 @media (max-width: 1171px) {
   .novidades-title {
     flex-direction: column;
@@ -975,6 +982,7 @@
     }
   }
 }
+
 
 @media (max-width: 1210px) {
   .container-bluetransfer {
