@@ -5549,6 +5549,9 @@ body.open-menu::after {
   .container-bluetransfer {
     background-color: #000000;
   }
+  .title-novidades {
+    padding-top: 80px;
+  }
   .fechamento-title h1 {
     line-height: 52px !important;
   }
@@ -5609,6 +5612,7 @@ body.open-menu::after {
   .container-cadastrar {
     padding-left: 0;
     padding-right: 0;
+    padding-top: 80px;
   }
   .texts-main {
     width: 100%;
