@@ -5929,6 +5929,9 @@ body.open-menu::after {
     background-color: #fafafa;
     z-index: 1;
   }
+  .cadastrar-cards4 img {
+    height: 26.079958vh;
+  }
 }
 @media (max-width: 339px) {
   .contatos-faq::before {
