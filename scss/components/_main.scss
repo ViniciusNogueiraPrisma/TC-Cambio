@@ -168,6 +168,9 @@ $color: #344ff4;
 .section-plataforma {
   background-color: #000000;
   background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+    url("../../images/bg-main-cambio.png");
+  background-position: center top 80px;
 }
 
 .container-plataforma {
