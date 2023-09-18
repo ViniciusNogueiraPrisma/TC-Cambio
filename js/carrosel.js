@@ -1,105 +1,22 @@
-var swiperVertical = new Swiper(".mySwiper", {
-  direction: "vertical",
-  slidesPerView: "auto",
-  spaceBetween: 20,
-  loop: true,
+var swiper = new Swiper(".mySwiper", {
+  // spaceBetween: 30,
+  effect: "fade",
+  // fadeEffect: {
+  //   crossFade: true,
+  // },
   autoplay: {
-    delay: 2000,
-  },
-});
-
-var swiper = new Swiper(".mySwiper-fundos", {
-  slidesPerView: "auto",
-  spaceBetween: 24,
-  autoplay: {
-    delay: 2000,
+    delay: 2500,
     disableOnInteraction: false,
   },
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev",
+  // },
   pagination: {
-    el: ".swiper-pagination-fundos",
+    el: ".swiper-pagination",
     clickable: true,
   },
 });
-
-var swiperCosmos = new Swiper(".mySwiper-cosmos", {
-  slidesPerView: "auto",
-  pagination: {
-    el: ".swiper-pagination-cosmos",
-  },
-});
-
-var swiper = new Swiper(".mySwiper-equipe", {
-  slidesPerView: "auto",
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-  },
-  spaceBetween: 24,
-  pagination: {
-    el: ".swiper-pagination-equipe",
-  },
-});
-
-// const paginationItems = document.querySelectorAll(".pagination-home-main li");
-// let activeIndex = 0;
-
-// function updatePagination() {
-//   // Remove a classe 'active' de todos os dots
-//   paginationItems.forEach((item) => {
-//     item.classList.remove("active");
-//   });
-
-//   // Define a classe 'active' para o próximo dot
-//   paginationItems[activeIndex].classList.add("active");
-
-//   // Incrementa activeIndex e redefine para 0 quando ultrapassa o número de items
-//   activeIndex = (activeIndex + 1) % paginationItems.length;
-// }
-
-// // Inicializa a paginação após 3 segundos
-// setTimeout(() => {
-//   updatePagination();
-//   // Atualiza a paginação a cada 3 segundos
-//   setInterval(updatePagination, 3000);
-// }, 3000);
-
-const paginationItems = document.querySelectorAll(".pagination-home-main li");
-let activeIndex = 0;
-let isPaused = false; // Variável para controlar a pausa na paginação
-
-function updatePagination() {
-  if (!isPaused) {
-    // Remove a classe 'active' de todos os dots
-    paginationItems.forEach((item) => {
-      item.classList.remove("active");
-    });
-
-    // Define a classe 'active' para o próximo dot
-    paginationItems[activeIndex].classList.add("active");
-
-    // Incrementa activeIndex e redefine para 0 quando ultrapassa o número de items
-    activeIndex = (activeIndex + 1) % paginationItems.length;
-  }
-}
-
-// Função para pausar ou retomar a paginação quando o mouse entra/sai de .img-carrosel-home
-function togglePaginationPause() {
-  isPaused = !isPaused;
-}
-
-// Adicionar eventos para pausar quando o mouse entra em .img-carrosel-home
-const imagens = document.querySelectorAll(".img-carrosel-home");
-imagens.forEach((imagem) => {
-  imagem.addEventListener("mouseenter", togglePaginationPause);
-  imagem.addEventListener("mouseleave", togglePaginationPause);
-});
-
-// Inicializa a paginação após 3 segundos
-setTimeout(() => {
-  updatePagination();
-  // Atualiza a paginação a cada 3 segundos
-  setInterval(updatePagination, 3000);
-}, 3000);
 
 const accordion_item = document.querySelectorAll(".accordion_item");
 

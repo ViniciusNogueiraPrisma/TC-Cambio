@@ -162,19 +162,10 @@
                   role="button"
                   data-mdb-toggle="dropdown"
                   aria-expanded="false"
+                  data-target="section-sobre"
                 >
                   Sobre
                 </a>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li>
-                    <a class="dropdown-item" href="quem-somos.html"
-                      >Quem Somos</a
-                    >
-                  </li>
-                </ul>
               </li>
 
               <li class="nav-item">
@@ -185,43 +176,27 @@
                   role="button"
                   data-mdb-toggle="dropdown"
                   aria-expanded="false"
+                  data-target="section-como"
                 >
                   Como Funciona
                 </a>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li>
-                    <a class="dropdown-item" href="fundos.html">Essencial</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="fundos.html">Long Bias</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="fundos.html">TC Cosmos</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="fundos.html"
-                      >Digital Assets</a
-                    >
-                  </li>
-                </ul>
               </li>
 
-              <li class="nav-item dropdown" href="documentos.html">
+              <li class="nav-item">
                 <a
                   class="nav-link"
-                  href="documentos.html"
+                  href="#"
                   id="navbarDropdownMenuLink"
                   role="button"
+                  data-mdb-toggle="dropdown"
                   aria-expanded="false"
+                  data-target="section-como"
                 >
                   Perguntas Frequentes
                 </a>
               </li>
 
-              <li class="nav-item dropdown" href="documentos.html">
+              <li class="nav-item dropdown" href="">
                 <a class="btn-menu-a"> Quero me cadastrar </a>
               </li>
             </div>
@@ -241,32 +216,6 @@
           >
             <i class="icon-busca"></i>
           </button>
-        </div> -->
-
-        <!-- <div class="btns-menu">
-          <div class="btns-items btn1">
-            <a href="/withelabel.html" class="abrir-conta">
-              <span>Abrir conta</span>
-            </a>
-            <img src="./images/icons/icon-carteira.svg" alt="" />
-          </div>
-
-          <div class="btns-items btn2">
-            <a href="" class="abrir-conta">
-              <span>Login</span>
-            </a>
-            <img src="./images/icons/profile-bold.svg" alt="" />
-          </div>
-
-          <div class="btn-menu">
-            <button
-              type="button"
-              class="toggle-mobile-menu"
-              aria-label="Abrir Menu"
-            >
-              <span class="icon-nav" title="Abrir Menu"></span>
-            </button>
-          </div>
         </div> -->
       </div>
 
@@ -541,21 +490,40 @@
     </aside>
 
     <div class="banner-cambio">
-      <div class="container-sm text-banner-cambio">
-        <div class="main-text-banner">
-          <h1>
-            Agora o TC conecta pessoas e <br />
-            empresas por todo o mundo!
-          </h1>
-          <span>Câmbio com BENEFÍCIOS para nossa comunidade.</span>
-          <a href="">Quero me cadastrar</a>
+      <div class="swiper mySwiper mySwiper-cambio">
+        <div class="container-sm text-banner-cambio">
+          <div class="main-text-banner">
+            <h1>
+              Agora o TC conecta pessoas e <br />
+              empresas por todo o mundo!
+            </h1>
+            <span>Câmbio com BENEFÍCIOS para nossa comunidade.</span>
+            <a href="">Quero me cadastrar</a>
+          </div>
+          
+          <div class="swiper-pagination pagination-home"></div>
         </div>
-      </div>
 
-      <img src="/images/bg-cambio.png" alt="" />
+        <div class="swiper-wrapper banner-cambio">
+          <div class="swiper-slide">
+            <img src="./images/banners-tc-cambio/banner1.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/banners-tc-cambio/banner-02.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/banners-tc-cambio/banner-03.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/banners-tc-cambio/banner-04.jpg" />
+          </div>
+        </div>
+        <!-- <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div> -->
+      </div>
     </div>
 
-    <div class="section-plataforma">
+    <div class="section-plataforma" data-section="section-sobre">
       <div class="container-sm container-plataforma">
         <div class="text-plataforma">
           <span>Nova plataforma de câmbio</span>
@@ -1278,7 +1246,6 @@
     <script defer src="./js/changeColor.js"></script>
     <script defer src="vendor/counterup.js"></script>
     <script defer src="js/carrosel.js"></script>
-    <script defer src="js/carrosel_home.js"></script>
     <script defer src="vendor/menuFixo.js"></script>
     <script defer src="vendor/aos.js"></script>
     <script defer src="vendor/basic-table.min.js"></script>

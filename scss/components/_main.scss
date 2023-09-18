@@ -24,7 +24,7 @@
 .banner-cambio img {
   width: 100%;
   // height: 77.67393561786085vh;
-  height: 89.63350785340315vh;
+  height: 89.63350785340315vh !important;
   object-fit: cover;
 }
 
@@ -33,24 +33,40 @@
   position: absolute;
   width: 100%;
   height: 89.63350785340315vh;
+  z-index: 1;
 
   background: rgb(0, 0, 0);
-  background: -moz-linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.3701855742296919) 100%,
-    rgba(0, 0, 0, 0.52) 100%
-  );
-  background: -webkit-linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.3701855742296919) 100%,
-    rgba(0, 0, 0, 0.52) 100%
-  );
   background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.3701855742296919) 100%,
-    rgba(0, 0, 0, 0.52) 100%
+    90deg,
+    rgba(0, 0, 0, 0.7455357142857143) 45%,
+    rgba(255, 255, 255, 0) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
+}
+
+.pagination-home {
+  padding-bottom: 80px;
+  // padding-left: 180px;
+  padding-left: 20px;
+  justify-content: start;
+  position: absolute;
+  display: flex;
+
+  .swiper-pagination-bullet {
+    background-color: #999999;
+    transition: 0.5s ease-in;
+    opacity: 0.7;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #344ff4 !important;
+    width: 50px;
+    border-radius: 0px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: 0.5s ease-in;
+  }
 }
 
 .text-banner-cambio {
@@ -61,16 +77,18 @@
   left: 0;
   right: 0;
   height: 89.63350785340315vh;
-  z-index: 2;
   color: white;
+
+  z-index: 10;
 }
 
 .main-text-banner {
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 11;
 
   h1 {
-    // Agora o TC conecta pessoas e empresas por todo o mundo!
     color: #fafafa;
     font-size: 64px;
     font-family: Bennet Banner Extra Condensed;
@@ -112,9 +130,7 @@
 
 .section-plataforma {
   background-color: #000000;
-  // background-image: url("../../images/bg-main-cambio.png");
   background-repeat: no-repeat;
-  // background-position: center top 80px;
 }
 
 .container-plataforma {
@@ -123,7 +139,14 @@
 
 .change-color-number {
   transition: 0.5s ease;
-  // color: #bbbbbb;
+}
+
+.mySwiper-cambio {
+  height: 89.63350785340315vh !important;
+}
+
+.swiper-slide {
+  transition: opacity 1s ease-in-out !important; /* Aumentando o tempo da transição */
 }
 
 .text-plataforma {
@@ -883,10 +906,6 @@
     line-height: 52.08px;
     word-wrap: break-word;
   }
-
-  // .text-banner-cambio {
-  //   justify-content: center;
-  // }
 
   .main-text-banner span {
     // Câmbio com BENEFÍCIOS para nossa comunidade.
