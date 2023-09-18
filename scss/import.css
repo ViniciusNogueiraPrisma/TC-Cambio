@@ -4743,6 +4743,38 @@ body.open-menu::after {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.7455357143) 45%, rgba(255, 255, 255, 0) 100%);
 }
 
+.button-hover-cambio {
+  display: inline-block;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.button-hover-cambio:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #344ff4;
+  z-index: -2;
+}
+.button-hover-cambio:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #0b27d0;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.button-hover-cambio:hover:before {
+  width: 100%;
+}
+
 .pagination-home {
   padding-bottom: 80px;
   padding-left: 20px;

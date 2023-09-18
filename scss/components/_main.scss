@@ -43,6 +43,43 @@
   );
 }
 
+$color: #344ff4;
+
+.button-hover-cambio {
+  display: inline-block;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color;
+    z-index: -2;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken($color, 15%);
+    transition: all 0.3s;
+    z-index: -1;
+  }
+  &:hover {
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
 .pagination-home {
   padding-bottom: 80px;
   // padding-left: 180px;
