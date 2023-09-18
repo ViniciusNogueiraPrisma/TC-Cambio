@@ -1528,3 +1528,9 @@ $color: #344ff4;
     height: 450px;
   }
 }
+
+@media (max-width: 1041px) {
+  .banner-cambio img {
+    object-position: right;
+  }
+}

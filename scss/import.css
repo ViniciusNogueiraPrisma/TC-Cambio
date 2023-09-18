@@ -6001,6 +6001,11 @@ body.open-menu::after {
     height: 450px;
   }
 }
+@media (max-width: 1041px) {
+  .banner-cambio img {
+    object-position: right;
+  }
+}
 @font-face {
   font-family: "Bw Seido Raw";
   src: url("../../fonts/Seido/Bw Seido Raw Regular.otf");
