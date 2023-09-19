@@ -34,7 +34,7 @@
 
 html {
   font-size: 100% !important;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 .mobile-menu .menu-tools {
@@ -3969,7 +3969,7 @@ ul.container {
     display: flex;
     justify-content: center;
     padding-top: 40px;
-
+    
     .swiper-pagination-bullet {
       border-radius: 4px !important;
       width: 24px;

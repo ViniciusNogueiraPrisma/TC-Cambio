@@ -82,7 +82,6 @@ $color: #344ff4;
 
 .pagination-home {
   padding-bottom: 80px;
-  // padding-left: 180px;
   padding-left: 20px;
   justify-content: start;
   position: absolute;
@@ -124,6 +123,7 @@ $color: #344ff4;
   flex-direction: column;
   position: relative;
   z-index: 11;
+  padding-bottom: 40px;
 
   h1 {
     color: #fafafa;
