@@ -1283,6 +1283,7 @@ svg {
   position: sticky !important;
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
   background-color: var(--pure-white);
+  top: -129px;
 }
 
 .accordion {
