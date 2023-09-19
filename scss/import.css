@@ -6040,6 +6040,7 @@ body.open-menu::after {
 
 html {
   font-size: 100% !important;
+  overflow-x: hidden;
 }
 
 .mobile-menu .menu-tools {
