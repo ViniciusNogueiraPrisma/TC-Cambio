@@ -6062,9 +6062,13 @@ html {
   overflow-x: auto !important;
 }
 
+.btn-nav-item {
+  display: flex;
+}
+
 .navbar {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .navbar-btns-after {
@@ -10599,6 +10603,12 @@ body {
 @media (max-width: 727px) {
   .quadro-last {
     display: none !important;
+  }
+}
+@media (max-width: 628px) {
+  .navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 /* Pages */
