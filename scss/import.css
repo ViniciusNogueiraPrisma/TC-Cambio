@@ -5178,7 +5178,6 @@ body.open-menu::after {
   border-radius: 4px;
 }
 .cadastrar-cards img {
-  width: 21.7708333333vw;
   height: 30.2180685358vh;
   margin-top: -40px;
 }
@@ -5205,7 +5204,6 @@ body.open-menu::after {
   border-radius: 4px;
 }
 .cadastrar-cards2 .modal2 {
-  width: 20.8333333333vw;
   height: 7.1875vw;
   margin-top: 40px;
 }
@@ -5220,7 +5218,6 @@ body.open-menu::after {
 }
 .cadastrar-cards3 img {
   margin-top: 40px;
-  width: 20.8333333333vw;
   height: 22.533748702vh;
 }
 
@@ -5234,8 +5231,7 @@ body.open-menu::after {
 }
 .cadastrar-cards4 img {
   margin-top: -75px;
-  width: 17.8125vw;
-  height: 21.0799584631vh;
+  height: 24.079958vh;
 }
 
 .title-novidades {
