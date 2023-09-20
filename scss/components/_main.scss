@@ -594,7 +594,7 @@ $color: #344ff4;
   border-radius: 4px;
 
   img {
-    margin-top: -75px;
+    margin-top: -95px;
     // width: 17.8125vw;
     // height: 21.079958463136034vh;
     height: 24.079958vh;
@@ -1091,12 +1091,12 @@ $color: #344ff4;
   }
 
   .modal1 {
-    width: 400px !important;
+    // width: 400px !important;
     // height: 138px !important;
   }
 
   .modal2 {
-    width: 400px !important;
+    // width: 400px !important;
     height: 138px !important;
   }
 
@@ -1106,7 +1106,7 @@ $color: #344ff4;
   }
 
   .modal3 {
-    width: 400px !important;
+    // width: 400px !important;
     height: auto;
     margin-top: 32px !important;
   }
@@ -1118,7 +1118,8 @@ $color: #344ff4;
   }
 
   .modal4 {
-    width: 400px !important;
+    // width: 400px !important;
+    margin-top: -75px !important;
   }
 
   .cadastrar-texts-last {
