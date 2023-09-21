@@ -5178,7 +5178,6 @@ body.open-menu::after {
   border-radius: 4px;
 }
 .cadastrar-cards img {
-  width: 21.7708333333vw;
   height: 30.2180685358vh;
   margin-top: -40px;
 }
@@ -5205,7 +5204,6 @@ body.open-menu::after {
   border-radius: 4px;
 }
 .cadastrar-cards2 .modal2 {
-  width: 20.8333333333vw;
   height: 7.1875vw;
   margin-top: 40px;
 }
@@ -5220,7 +5218,6 @@ body.open-menu::after {
 }
 .cadastrar-cards3 img {
   margin-top: 40px;
-  width: 20.8333333333vw;
   height: 22.533748702vh;
 }
 
@@ -5233,9 +5230,8 @@ body.open-menu::after {
   border-radius: 4px;
 }
 .cadastrar-cards4 img {
-  margin-top: -75px;
-  width: 17.8125vw;
-  height: 21.0799584631vh;
+  margin-top: -95px;
+  height: 24.079958vh;
 }
 
 .title-novidades {
@@ -5649,11 +5645,7 @@ body.open-menu::after {
     width: 100%;
     height: 129px;
   }
-  .modal1 {
-    width: 400px !important;
-  }
   .modal2 {
-    width: 400px !important;
     height: 138px !important;
   }
   .cadastrar-cards3 {
@@ -5661,7 +5653,6 @@ body.open-menu::after {
     height: 200px;
   }
   .modal3 {
-    width: 400px !important;
     height: auto;
     margin-top: 32px !important;
   }
@@ -5671,7 +5662,7 @@ body.open-menu::after {
     height: 157px;
   }
   .modal4 {
-    width: 400px !important;
+    margin-top: -75px !important;
   }
   .cadastrar-texts-last {
     flex-direction: column-reverse !important;
