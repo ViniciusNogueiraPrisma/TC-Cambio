@@ -4724,6 +4724,24 @@ body.open-menu::after {
   word-wrap: break-word;
 }
 
+#whatsapp-button {
+  position: fixed;
+  bottom: 40px; /* Ajuste essa propriedade conforme necessário */
+  right: 40px; /* Ajuste essa propriedade conforme necessário */
+  z-index: 1000; /* Certifique-se de que esteja acima de outros elementos na página */
+}
+
+#whatsapp-button a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+#whatsapp-button img {
+  width: 45px; /* Ajuste o tamanho do ícone conforme necessário */
+  height: auto;
+}
+
 .btn-menu-a:hover {
   color: white;
 }
@@ -6001,6 +6019,32 @@ body.open-menu::after {
     object-position: right;
   }
 }
+.rich-text-tc-lgpd h1 {
+  font-size: 32px;
+  font-family: "Neue Haas Unica Pro";
+}
+.rich-text-tc-lgpd h2 {
+  font-size: 19px;
+  padding-top: 20px;
+  color: black;
+}
+.rich-text-tc-lgpd h3 {
+  color: black !important;
+  font-size: 19px;
+}
+
+.title-pol {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+[role=list] strong {
+  color: rgb(19, 19, 19);
+}
+
 @font-face {
   font-family: "Bw Seido Raw";
   src: url("../../fonts/Seido/Bw Seido Raw Regular.otf");

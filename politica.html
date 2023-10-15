@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TC Câmbio</title>
+
+    <link preload rel="stylesheet" href="./vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="./vendor/basic-table.min.css" />
+
+    <link rel="stylesheet" href="./vendor/slick.min.css" />
+    <link rel="stylesheet" href="./vendor/slick-theme.min.css" />
+    <link rel="stylesheet" href="./vendor/aos.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://template.riweb.com.br/prisma/css/stories.dist.min.css"
+      media="all"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Slabo+27px&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/8c2d2553fe.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <link rel="icon" href="./images/favicon-152px.png" type="image/x-icon" />
+    <meta property="og:image" content="./images/thumb-tc-cambio.jpg" />
+
+    <!-- <link rel="stylesheet" href="./css/import.dist.min.css" /> -->
+
+    <link rel="stylesheet" href="./scss/import.css" />
+
+    <script src="vendor/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- <div class="acessibillity-bar">
+      <div class="container container-responsivo-full">
+        <div class="content">
+          <div class="right-top-header">
+            <div class="accessibility-tools">
+              <a href="/acessibilidade"> <small> Acessibilidade </small> </a>
+
+              <button
+                id="contrast-toggle"
+                type="button"
+                class="tool"
+                data-bs-toggle="tooltip"
+                data-bs-trigger="hover"
+                data-bs-placement="bottom"
+                title=""
+                data-bs-original-title="Contraste"
+              >
+                <span class="icon-contraste"></span>
+              </button>
+
+              <button
+                id="increaseFont"
+                type="button"
+                class="tool aumentar-fonte"
+                data-bs-toggle="tooltip"
+                data-bs-trigger="hover"
+                data-bs-placement="bottom"
+                title=""
+                data-bs-original-title="Aumentar o tamanho da fonte"
+              >
+                <span class="icon-aumentar-fonte" accesskey="4"></span>
+              </button>
+
+              <button
+                id="decreaseFont"
+                type="button"
+                class="tool"
+                data-bs-toggle="tooltip"
+                data-bs-trigger="hover"
+                data-bs-placement="bottom"
+                title=""
+                data-bs-original-title="Diminuir o tamanho da fonte"
+              >
+                <span class="icon-diminuir-fonte" accesskey="5"></span>
+              </button>
+            </div>
+
+            <!-- <div class="idiomas">
+              <a
+                id="hlkCulturaPtBr"
+                accesskey="7"
+                data-bs-toggle="tooltip"
+                data-bs-trigger="hover"
+                data-bs-placement="bottom"
+                title=""
+                class="active"
+                href="javascript:__doPostBack('ctl00$hlkCulturaPtBr','')"
+                data-bs-original-title="Mudar para português"
+              >
+                <span>PT</span>
+              </a>
+              <a
+                id="hlkCulturaEnUS"
+                accesskey="8"
+                data-bs-toggle="tooltip"
+                data-bs-trigger="hover"
+                data-bs-placement="bottom"
+                title=""
+                href="javascript:__doPostBack('ctl00$hlkCulturaEnUS','')"
+                data-bs-original-title="Mudar para inglês"
+              >
+                <span>EN</span>
+              </a>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>-->
+
+    <div class="navbar headerFixoMenu">
+      <div class="container-sm navbar-after">
+        <a href="index.html">
+          <div class="logo">
+            <img
+              class="logo-black-home"
+              src="./images/logo-cambio.png"
+              alt=""
+            />
+          </div>
+        </a>
+
+        <div class="list-menu">
+          <ul class="navbar-nav">
+            <div class="navbar-items">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#section-sobre"
+                  id="navbarDropdownMenuLink"
+                >
+                  Sobre
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#section-como"
+                  id="navbarDropdownMenuLink"
+                >
+                  Como Funciona
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#section-perguntas"
+                  id="navbarDropdownMenuLink"
+                >
+                  Perguntas Frequentes
+                </a>
+              </li>
+
+              <li class="nav-item dropdown btn-nav-item" href="">
+                <a class="btn-menu-a button-hover-cambio">
+                  Quero me cadastrar
+                </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+
+        <!-- <div class="search-btn">
+          <button
+            type="button"
+            class="open-searchbox btnSearch"
+            data-bs-toggle="tooltip"
+            data-bs-trigger="hover"
+            data-bs-placement="bottom"
+            accesskey="2"
+            title=""
+            data-bs-original-title="Pesquisar"
+          >
+            <i class="icon-busca"></i>
+          </button>
+        </div> -->
+      </div>
+
+      <div class="container-sm navbar-btns-after">
+        <div class="content-btns-after">
+          <div class="btn-navbar-1">
+            <a href="./withelabel.html">Abrir conta</a>
+            <img src="./images/icons/icon-carteira.svg" alt="" />
+          </div>
+          <div class="btn-navbar-2">
+            <a href="">Login</a>
+            <img src="./images/icons/profile-bold.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="searchbox">
+      <div class="container container-responsivo-full">
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Digite aqui a sua busca"
+          />
+
+          <div class="input-group-text">
+            <button
+              type="button"
+              class="close-searchbox"
+              aria-label="Fechar Modal de Pesquiasr"
+            >
+              <span class="icon-exibir"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="search-help">
+          <small>Aperte Enter para pesquisar</small>
+        </div>
+      </div>
+    </div>
+
+    <main class="main" class="container-sm">
+      <section id="comunidade" class="comunidade container-sm">
+        <div class="section-lgpd">
+          <div class="container-bootstrap w-container">
+            <div class="rich-text-tc-lgpd w-richtext">
+              <div class="title-pol">
+                <h1><strong>Lei Geral de Proteção de Dados</strong></h1>
+              </div>
+
+              <ul role="list">
+                <li>
+                  <strong>Lista de Abreviações, Conceitos e Siglas</strong>
+                </li>
+                <li>
+                  <strong>ANPD –</strong> Agência Nacional de Proteção de Dados.
+                </li>
+                <li>
+                  ‍<strong>Controlador – </strong>Pessoa natural ou jurídica, de
+                  direito público ou privado, a quem competem as decisões
+                  referentes ao Tratamento de Dados Pessoais.
+                </li>
+                <li>
+                  ‍<strong>CVM – </strong>Comissão de Valores Mobiliários.
+                </li>
+                <li>
+                  ‍<strong>Dado(s) Pessoal(is) ou Dado –</strong> Informação
+                  relacionada a pessoa natural identificada ou identificável.
+                </li>
+                <li>
+                  ‍<strong>Dado(s) Pessoal(is) Sensível(is) –</strong> Dado
+                  Pessoal sobre origem racial ou étnica, convicção religiosa,
+                  opinião política, filiação a sindicato ou a organização de
+                  caráter religioso, filosófico ou político, dado referente à
+                  saúde ou à vida sexual, dado genético ou biométrico, quando
+                  vinculado a uma pessoa natural.
+                </li>
+                <li>
+                  ‍<strong>DPO –</strong> Data Protection Officer.<strong
+                    >‍</strong
+                  >
+                </li>
+                <li>
+                  <strong>Encarregado de Dados –</strong> Pessoa indicada pelo
+                  Controlador e/ou Operador, quando aplicável, para atuar como
+                  canal de comunicação entre o Controlador, os Titulares de
+                  Dados e a ANPD.<strong>(Grupo) TC S.A –</strong> Para fins
+                  desta política considera-se a “Companhia” o TC Traders Club
+                  S.A, inscrita no CNPJ sob o nº. 26.345.998/0001-50, e
+                  estabelecida na Rua Leopoldo Couto de Magalhaes, Bairro Itaim
+                  Bibi, em São Paulo/SP, CEP: 04542-000 e todas as sociedades
+                  nas quais a Companhia detém ou venha a deter participação
+                  societária direta ou indiretamente, tais como, mas sem
+                  limitação, TC MATRIX LTDA, TC Radio LTDA, TC Mover &amp; TC
+                  School Informação e Educação LTDA, TC Gestão Empresarial LTDA,
+                  SENCON; TC Comercio LTDA, Economática; (“Sociedades” ou
+                  “Subsidiárias”).<strong>‍</strong>
+                </li>
+                <li>
+                  <strong>Legítimo Interesse –</strong> Base legal de Tratamento
+                  de Dados Pessoais prevista nos artigos 7º, IX e 10 da LGPD,
+                  que valida o Tratamento de Dados a partir, em suma, (i) da
+                  legitimidade e legalidade dos interesses do TC SA. ou de
+                  terceiros para a realização de determinado Tratamento de Dados
+                  Pessoais, (ii) da avaliação da efetiva necessidade do
+                  Tratamento para a finalidade pretendida pelo TC S.A, e (iii)
+                  do equilíbrio entre os interesses do TC S.A ou de terceiros e
+                  os direitos do Titular, incluindo suas expectativas legítimas
+                  em relação ao Tratamento de seus Dados Pessoais.<strong
+                    >Lei nº 12.965, de 23 de abril de 2014 –</strong
+                  >
+                  Estabelece princípios, garantias, direitos e deveres para o
+                  uso da Internet no Brasil.<strong
+                    >Lei nº 13.853, de 8 de julho de 2019 – </strong
+                  >Altera a Lei nº 13.709, de 14 de agosto de 2018, para dispor
+                  sobre a proteção de Dados Pessoais e para criar a ANPD; e dá
+                  outras providências.<strong>LGPD –</strong> Lei nº 13.709, de
+                  14 de agosto de 2018 (e alterações).<strong
+                    >Operador –</strong
+                  >
+                  Pessoa natural ou jurídica, de direito público ou privado, que
+                  realiza o Tratamento de Dados Pessoais em nome do
+                  Controlador.<strong>Titular (de Dados) –</strong> Pessoa
+                  natural a quem se referem os Dados Pessoais que são objeto de
+                  Tratamento.<strong>Tratamento –</strong> Toda operação
+                  realizada com Dados Pessoais, inclusive, em limitação, aquelas
+                  que se referem a coleta, produção, recepção, classificação,
+                  utilização, acesso, reprodução, transmissão, distribuição,
+                  processamento, arquivamento, armazenamento, eliminação,
+                  avaliação ou controle da informação, modificação, comunicação,
+                  transferência, difusão ou extração.
+                </li>
+              </ul>
+              <h2><strong>1. Objetivos</strong></h2>
+              <p>
+                Com esta Política, o TC S.A, pretende demonstrar de forma clara,
+                direta e objetiva como trata os Dados Pessoais que recebe de
+                você, nosso cliente; isso significa precisamente que
+                demonstraremos como, e por quais motivos coletamos seus Dados, a
+                forma como são armazenados, como, para qual finalidade, e qual
+                base nos autoriza a compartilhá-los com terceiros – e por fim,
+                mas não menos relevante, como mantemos, e em quais hipóteses os
+                deletamos, ou excluímos seus Dados de nossa base.Na posição de
+                Controlador de Dados, as diretrizes de privacidade de Dados do
+                TC S.A, são planejadas para garantir a segurança, a integridade,
+                e o adequado Tratamento dos seus Dados Pessoais, durante a
+                execução das atividades de Tratamento de Dados. O programa de
+                privacidade do TC S.A, é apoiado em sólidos procedimentos de
+                análise, controle, monitoramento, e atualização constante dos
+                processos que envolvem DadosPessoais dentro do TC S.A.A cultura
+                do TC S.A garante, assegura e preza pela pluralidade, e pela
+                diversidade. Assim os procedimentos de privacidade e proteção de
+                Dados sobre os quais falaremos nesta Política se aplicam a
+                qualquer indivíduo indistintamente, independentemente de
+                qualquer característica física, social, de gênero, idade, raça,
+                cor, religião, origem, identidade de gênero, orientação sexual,
+                estado civil, ou condição de saúde.Desta forma, a seguir você
+                entenderá alguns aspectos essenciais do Tratamento dos seus
+                Dados Pessoais pelo TC S.A:
+              </p>
+              <ul role="list">
+                <li>Identificação do Controlador</li>
+                <li>Categorias de Dados que tratamos</li>
+                <li>Finalidade do Tratamento de seus Dados</li>
+                <li>
+                  Consentimento e exercício dos seus direitos como Titular de
+                  Dados
+                </li>
+              </ul>
+              <h2><strong>2. Referências</strong></h2>
+              <p>
+                Construir as políticas do TC S.A, significa apoiar-se na
+                legislação vigente, nos normativos – quando for o caso -, e nas
+                melhores práticas do mercado. Por isso, a seguir, você poderá
+                ver que, por mais de uma oportunidade, falaremos sobre a Lei
+                13.709/2018, a Lei Geral de Proteção de Dados, ou LGPD, que é o
+                ponto focal desta Política. Ainda, nos referiremos à Lei nº
+                13.853, de 8 de julho de 2019, que é a Lei que alterou alguns
+                aspectos da LGPD. O TC S.A naturalmente, também norteia sua
+                Política, nos princípios constitucionais, da Constituição da
+                República Federativa do Brasil de 1988 e no Marco Regulatório da
+                Internet, a Lei n.º 12.965 de 23 de abril de 2014.
+              </p>
+              <h2><strong>3. Abrangência</strong></h2>
+              <p>
+                Esse tópico, pode ser melhor entendido se nos questionarmos:
+                “<em>Quem deve seguir esta Política</em>?” A resposta é simples:
+                Todos os funcionários, prestadores de serviço e diretores do TC
+                S.A estão submetidos diretamente a esta Política, e aos
+                procedimentos acerca de proteção e privacidade dos Dados, aos
+                quais tenham acesso em suas funções. Esta Política se aplica a
+                todas as Sociedades que fazem parte do Grupo TC S.A. Estamos em
+                constante expansão, mas você pode encontrar nossos principais
+                negócios no tópico “Lista de abreviações conceitos e siglas”
+                acima. O Controlador de seus Dados Pessoais é a Sociedade do TC
+                S.A com a qual você possua uma relação comercial direta.
+              </p>
+              <h2><strong>4. Aplicação /Público Alvo</strong></h2>
+              <p>
+                Os termos desta Política, precisam ser cumpridos, para que você,
+                Titular de Dados, tenha seu direito de privacidade preservado.
+                Por isso o Público-alvo desta Política, ou seja, o motivo pelo
+                qual seguimos as recomendações deste documento, é garantir que
+                nossos clientes e investidores, tenham a melhor experiencia
+                possível quando confiam seus Dados Pessoais, a nós. Esta
+                Política, portanto, se aplica a todos os clientes e investidores
+                do TC S.A.
+              </p>
+              <h2><strong>5. Responsabilidades</strong></h2>
+              <p>
+                A governança corporativa relacionada às políticas e
+                procedimentos relativos à privacidade de Dados, no TC S.A, são
+                de responsabilidade dos órgãos da alta administração da
+                Companhia Os órgãos da alta administração da Companhia serão
+                responsáveis não apenas pela definição das políticas e
+                procedimentos relativos à privacidade de Dados da própria
+                Companhia, mas também das demais Sociedades do Grupo TC S.A. A
+                gestão da estrutura de privacidade de Dados do TC S.A, é feita
+                em conjunto pela Diretoria Estatutária, o Comitê de Ética e
+                Compliance, além da figura do DPO, ou Encarregado de Dados, como
+                se refere a própria LGPD.Cada um destes organismos desempenha um
+                papel, relevante e fundamental para que a segurança dos seus
+                Dados seja garantida.
+              </p>
+              <h3>‍<strong>5.1. Diretoria Estatutária</strong></h3>
+              <p>
+                <strong>‍</strong>Em cada Sociedade do Grupo TC S.A, a diretoria
+                estatutária tem o dever de garantir subsídios adequados e
+                suficientes a garantir que seus Dados Pessoais sejam tratados de
+                acordo com a LGPD e demais legislações aplicáveis localmente.
+              </p>
+              <h3>‍<strong>5.2. Comitê de Ética e Compliance</strong></h3>
+              <p>
+                <strong>‍</strong>O Comitê de Ética e Compliance da Companhia,
+                tem o dever de assegurar que o Tratamento de Dados da Companhia
+                ocorra de acordo com a legislação (LGPD), e, portanto, que esta
+                Política seja a mais fiel tradução dos procedimentos que ocorrem
+                na prática, no dia a dia da Companhia e das demais Sociedades do
+                Grupo TC S.A.
+              </p>
+              <h3>‍<strong>5.3. DPO ou Encarregado de Dados</strong></h3>
+              <p>
+                <strong>‍</strong>Primeiramente cabe deixar claro, que o DPO (ou
+                Encarregado de Dados) é a pessoa, nomeada pelo Controlador, que
+                será diretamente responsável por intermediar a relação entre o
+                Controlador, – neste caso a Sociedade do TC S.A com a qual você
+                tenha relacionamento – e o Titular de Dados, (você). Ao DPO
+                ainda, fica reservada a função de implementar, desenvolver e
+                manter os controles, processos, e procedimentos necessários e
+                adequados para que seus Dados sejam tratados de maneira que
+                garanta sua total privacidade na medida do que a legislação
+                estabelece. O DPO é, portanto, uma espécie de garantidor do
+                Tratamento dos Dados Pessoais dentro do TC S.A, e dentre outras
+                atividades que o DPO realiza, é importante destacarmos aqui,
+                algumas delas, para que você possa entender melhor o seu papel
+                no Tratamento dos seus Dados Pessoais:
+              </p>
+              <ol role="list">
+                <li>
+                  Garantir que os Dados sejam coletados, de acordo com a
+                  legislação, devidamente respaldados por base legal adequada.
+                  Ou seja, nos casos em que o consentimento deva ser concedido
+                  para a coleta, por exemplo, assegurar que a informação sobre a
+                  finalidade do uso, esteja clara para o Titular neste momento.
+                </li>
+                <li>
+                  Garantir que os Dados coletados sejam tratados de acordo com a
+                  legislação, ou seja, que seus Dados sejam armazenados,
+                  mantidos, compartilhados ou transferidos, e quando for o caso,
+                  deletados, ou excluídos dentro dos limites legais.
+                </li>
+                <li>
+                  Garantir que os seus direitos como Titular de Dados, sejam
+                  atendidos, claro, sempre que o pedido de exercício do seu
+                  direito for legitimo, e factível.
+                </li>
+                <li>
+                  Garantir a implantação, desenvolvimento, e manutenção
+                  apropriados de procedimentos para fornecer:
+                </li>
+              </ol>
+              <ul role="list">
+                <li>
+                  Comunicação adequada desta Política ao público de abrangência,
+                  e a quem mais se fizer necessário.
+                </li>
+                <li>
+                  Políticas adequadas e suficientes a abranger a estrutura de
+                  Privacidade de Dados do TC S.A.
+                </li>
+                <li>Resposta aos pedidos de Titulares de Dados.</li>
+                <li>
+                  Controles e Procedimentos adequados para garantir que não haja
+                  acesso de pessoas não autorizadas aos Dados Pessoais, bem como
+                  divulgação indevida dos Dados.
+                </li>
+                <li>
+                  Garantia de que os Dados não serão mantidos por mais tempo que
+                  o necessário (excetuando-se as hipóteses de
+                  anonimização/pseudoanonimização dos Dados)
+                </li>
+                <li>
+                  Garantir que os Dados obtidos sejam de fato, relevantes e,
+                  portanto, evitar Dados excessivos (coletar mais dados que o
+                  necessário para o cumprimento da atividade/contrato).
+                </li>
+              </ul>
+              <h3><strong>5.4. Conselho De Administração</strong></h3>
+              <p>
+                <strong>‍</strong>O Conselho de Administração do TC SA, é
+                formado por integrantes de seu quadro estatutário, bem como por
+                3 (três) conselheiros externos, e independentes. O Conselho
+                relativamente à privacidade de dados no TC SA, tem a função de
+                analisar, e aprovar as diretrizes de governança, como as
+                políticas e procedimentos voltados ao tema de privacidade de
+                dados.
+              </p>
+              <h2><strong>6. Sobre os Dados que coletamos:</strong></h2>
+              <h3>
+                <strong>6.1. Quais Categorias De Dados o TC S.A Coleta?</strong>
+              </h3>
+              <p>
+                <strong>‍</strong>A grande maioria dos Dados que coletamos é
+                baseada nas informações que você, cliente do TC S.A nos fornece,
+                no momento de seu cadastro em nosso site, aplicativo, ou em
+                alguma de nossas outras propriedades eletrônicas (“Plataformas”)
+                ou Dados gerados a partir do que você nos informou. As
+                categorias destes Dados podem variar, mas em geral, pode ser que
+                o TC S.A trate:
+              </p>
+              <figure
+                style="max-width: 605px"
+                class="w-richtext-align-fullwidth w-richtext-figure-type-image"
+              >
+                <div>
+                  <img
+                    src="https://assets-global.website-files.com/62b0e10e698fe4d9588e7137/63076e1ae166a860b61088f9_dados2-605x1024.jpeg"
+                    alt=""
+                  />
+                </div>
+              </figure>
+              <h2><strong>7. Sobre o Uso dos Seus Dados Pessoais</strong></h2>
+              <h3>
+                <strong
+                  >7.1. Para quais Finalidades o TC S.A Usa seus Dados
+                  Pessoais?</strong
+                >
+              </h3>
+              <p>
+                Sempre apoiados nas bases legais que a LGPD elenca para que
+                possamos Tratar seus Dados, o TC S.A usa seus Dados para
+                executar os serviços contratados, oferecer novos serviços e uma
+                experiência cada vez melhor e mais personalizada a você. Veja
+                algumas das atividades que o TC S.A pode executar com seus
+                Dados:
+              </p>
+              <ul role="list">
+                <li>
+                  Permitir sua navegação na Plataforma, incluindo análises,
+                  agregadas ou não, de comportamento de clientes, a
+                  identificação de problemas e realização de melhorias na
+                  Plataforma; incluindo personalização de recursos e o
+                  monitoramento de segurança;
+                </li>
+                <li>
+                  Permitir a prestação dos serviços oferecidos pelo TC S.A,
+                  realização de cadastro, viabilização de transações, permissão
+                  e viabilidade de execução de contratos;
+                </li>
+                <li>
+                  Atender a solicitações e contatos, receber reclamações, apurar
+                  denúncias ou responder a requisições dos clientes e outros
+                  sujeitos envolvidos na operação;
+                </li>
+                <li>
+                  Estabelecer contato entre o TC S.A e os clientes, inclusive
+                  para garantir o adimplemento de obrigações;
+                </li>
+                <li>
+                  Permitir a prestação de assistência e serviços acessórios
+                  oferecidos pelas Sociedades do Grupo TC S.A, eventualmente
+                  relacionados aos contratos estabelecidos com os clientes;
+                </li>
+                <li>
+                  Realizar a gestão de relacionamento com os clientes, inclusive
+                  através de comunicação pelos meios disponíveis, marketing
+                  direto, publicidade e ações promocionais;
+                </li>
+                <li>
+                  Traçar a análise do perfil comportamental, de consumo e /ou
+                  financeiro, do cliente com base nos Dados fornecidos para
+                  personalizar conteúdos adequados ao seu perfil;
+                </li>
+                <li>
+                  Ofertar marketing e publicidade dos serviços do TC S.A,
+                  incluindo publicidade direcionada conforme análise de perfil
+                  de comportamento, de consumo, financeiro e/ou localização;
+                </li>
+                <li>Realizar pesquisas de satisfação ou de outra natureza;</li>
+                <li>Verificar a identidade do cliente;</li>
+                <li>
+                  Exercer direitos do TC S.A, inclusive em contratos e processos
+                  judiciais, administrativos ou arbitrais, bem como para
+                  cumprimento das obrigações legais;
+                </li>
+                <li>
+                  Preparar respostas a autoridades no âmbito de processos
+                  judiciais ou administrativos, em cumprimento de deveres
+                  legais, regulatórios ou quaisquer outros licitamente exigíveis
+                  ao TC S.A, ou em defesa de seus direitos e interesses
+                  legítimos;
+                </li>
+                <li>
+                  Realizar atividades de prevenção contra fraude e atividades
+                  ilícitas, incluindo medidas para proteção do TC S.A, de
+                  clientes e/ou de terceiros; e
+                </li>
+                <li>Proteger o crédito, quando aplicável.</li>
+              </ul>
+              <p></p>
+              <h2><strong>8. Compartilhamento de Dados Pessoais:</strong></h2>
+              <h3>
+                <strong
+                  >8.1. Com Quem o TC S.A Compartilha Seus Dados
+                  Pessoais?</strong
+                >
+              </h3>
+              <p>
+                O TC S.A poderá compartilhar seus Dados entre as empresas de seu
+                grupo econômico e áreas de negócio do grupo, todas sujeitas a
+                esta Política, a práticas de Tratamento de Dados lícitas e dever
+                de confidencialidade. Tal compartilhamento ocorre para atender
+                aos legítimos interesses do TC S.A ou aos seus interesses, como
+                envio de publicidade quanto a outros serviços que possam ser do
+                seu interesse, para o suporte e desenvolvimento de novos
+                serviços ou negócios, para mantermos seus Dados atualizados,
+                para viabilizar a prestação de serviços contratados, entre
+                outros.
+              </p>
+              <p>
+                Também poderemos compartilhar seus Dados com prestadores de
+                serviços, parceiros de negócio, e terceiros em geral (que a LGPD
+                nomeia “Operadores de Dados”) que auxiliem o TC S.A de alguma
+                forma a prestar o serviço, ou parte do serviço que é contratado
+                por você, nosso cliente. Sempre buscamos avaliar o compromisso
+                destes terceiros com relação a proteção de Dados e firmar com
+                eles obrigações contratuais de segurança da informação e
+                proteção de Dados Pessoais, com o objetivo de minimizar riscos
+                para o Titular de Dados
+              </p>
+              <p>
+                O TC S.A ainda pode ser solicitado por alguma autoridade, ou
+                órgão regulador a compartilhar seus Dados, em processos
+                administrativos, judiciais, cumprimento de ordens judiciais, ou
+                regulatórias, e eventualmente em investigações e ligadas ao
+                combate de atos ilícitos, como fraudes, crimes financeiros, e
+                corrupção.
+              </p>
+              <p>
+                Este compartilhamento é realizado através de canais seguros,
+                mantidos pelos times de Segurança da Informação, e de Dados, do
+                TC S.A que garantem a proteção de seus Dados.
+              </p>
+              <p></p>
+              <h2><strong>9. Direitos do Titular De Dados</strong></h2>
+              <p>
+                A LGPD traz um rol de direitos que você, como Titular de Dados,
+                pode exercer, quando fornece seus Dados. O TC S.A conta com
+                recursos para oferecer a resposta mais adequada e eficiente,
+                para quando você desejar exercer qualquer um de seus direitos.
+              </p>
+              <h3>
+                <strong
+                  >9.1. Quais São Seus Direitos Como Titular De Dados?</strong
+                >
+              </h3>
+              <figure
+                class="w-richtext-align-center w-richtext-figure-type-image"
+              >
+                <div>
+                  <img
+                    src="https://assets-global.website-files.com/62b0e10e698fe4d9588e7137/63076e1aaf7f73326221f03d_direitos-526x1024.jpeg"
+                    alt=""
+                  />
+                </div>
+              </figure>
+              <p>
+                Forma e condições de exercício: Os direitos mencionados acima
+                serão garantidos e poderão ser exercidos pelo Titular nos exatos
+                termos descritos na LGPD. Toda e qualquer solicitação,
+                reclamação, pedido de informação ou exercício de direitos do
+                Titular de Dados poderá ser realizada por mensagem escrita para
+                o e-mail acima informado. Em todos os casos, o Titular de Dados
+                deverá informar, minimamente, as seguintes informações:
+              </p>
+              <ul role="list">
+                <li>Nome completo do Titular de Dados;</li>
+                <li>Número de RG ou CPF do Titular de Dados;</li>
+                <li>Descrição da solicitação.</li>
+                <li>Defesa em processos judiciais, por exemplo.</li>
+              </ul>
+              <h2><strong>10. Retenção e Exclusão de Dados:</strong></h2>
+              <h3>
+                <strong>10.1. Período de Retenção de Dados Pessoais:</strong>
+              </h3>
+              <p>
+                O TC S.A manterá seus Dados Pessoais, de maneira segura e
+                adequada, de acordo com nossa Política Interna de Retenção de
+                Dados, que reúne os procedimentos de segurança e controle
+                durante o período em que o TC S.A tiver acesso aos seus Dados,
+                devidamente legitimado por base legal adequada, como o
+                cumprimento de obrigação legal ou regulatória ou para defesa em
+                processos judiciais, por exemplo.
+              </p>
+              <p>
+                Os períodos de retenção dos Dados Pessoais variam de acordo com
+                os objetivos para os quais foram coletados ou finalidades
+                legítimas subsequentes. Alguns dos critérios usados pelo TC S.A
+                para avaliar períodos apropriados de retenção incluem: (i) a
+                natureza dos Dados Pessoais e as atividades envolvidas, (ii)
+                interações do Titular com o TC S.A, e (iii) as obrigações
+                legais. Para fornecer segurança e continuidade aos negócios, o
+                TC S.A possui backups de certos Dados, os quais ficam seguros,
+                com acesso restrito e segregados dos demais Dados ativos, com
+                lastro em algum dever, possibilidade ou interesse legítimo de
+                retenção.
+              </p>
+              <p>
+                Quando eventualmente, por qualquer motivo, a prestação de
+                serviços estiver encerrada, o TC S.A ainda poderá manter seus
+                Dados armazenados por períodos que sejam exigidos por questões
+                regulatórias (como a CVM) ou legais (como ações judiciais), para
+                o exercício legal de seus direitos, e inclusive para fins de
+                auditoria.
+              </p>
+              <h3>
+                <strong>10.2. Exclusão de Dados:<br /></strong>
+              </h3>
+              <p>
+                Após o respectivo período estipulado para retenção de cada Dado,
+                o TC S.A poderá excluir por completo seus Dados da base, ou
+                ainda, mantê-los definitivamente anonimizados; o que é uma
+                hipótese legal de manutenção de Dados prevista na LGPD, e
+                garante total segurança, uma vez que a anonimização definitiva
+                não permitirá jamais, a identificação do titular daquele dado,
+                por ser irreversível.
+              </p>
+              <p></p>
+              <h2><strong>11. Segurança Dos Dados</strong></h2>
+              <p>
+                Nossos servidores são protegidos e controlados para garantir a
+                segurança dos seus Dados Pessoais. Adotamos medidas técnicas de
+                segurança e nosso banco de Dados somente podem ser acessados por
+                meio de pessoas previamente autorizadas, para que possam
+                desempenhar suas funções dentro do TC S.A. No entanto, sabemos
+                que nenhuma medida de segurança é 100% eficaz e capaz de
+                garantir a segurança absoluta dos Dados Pessoais. Assim, o TC
+                S.A recomenda expressamente que todos seus colaboradores,
+                clientes e demais envolvidos tomem medidas para se proteger, por
+                exemplo, não compartilhando credenciais de login em suas contas,
+                não enviando informações confidenciais com métodos não seguros
+                (por exemplo, via e-mail não criptografado) e protegendo seus
+                dispositivos eletrônicos (por exemplo, com senhas fortes e
+                confiáveis).
+              </p>
+              <p></p>
+              <h2><strong>12. Trade Ideas</strong></h2>
+              <p>
+                O Trade Ideas, é a comunidade digital oficial do TC S.A, criada
+                para que uma determinada categoria de usuários possa contribuir
+                compartilhando suas experiências, e comentários acerca do
+                mercado financeiro. Todas as informações postadas por esta
+                determinada categoria de usuários são públicas, aos demais
+                usuários, e por isso o TC S.A recomenda que não haja exposição
+                neste ambiente de nenhuma informação de caráter pessoal,
+                incluindo Dados Pessoais.
+              </p>
+              <p></p>
+              <h2><strong>13. Transferência Internacional de Dados</strong></h2>
+              <p>
+                Os Dados Pessoais coletados pelo Grupo TC S.A sempre serão
+                tratados com base na LGPD. O TC S.A está sediado no Brasil, mas
+                nossas subcontratadas, empresas prestadoras de serviços ou
+                parceiras também podem estar sediadas ou podem realizar o
+                Tratamento de Dados em outros países que não o Brasil. Nesse
+                caso, iremos cumprir com os artigos 33 a 36 da LGPD e exigir
+                contratualmente que as nossas subcontratadas, empresas
+                prestadoras de serviços ou parceiras, compram com as obrigações
+                da LGPD. Assim, ao contratar os nossos serviços e concordar com
+                esta Política, você concorda também que os seus Dados Pessoais
+                podem estar sujeitos a transferências internacionais.
+              </p>
+              <p></p>
+              <h2>
+                <strong
+                  >14. Fale Conosco Sobre Privacidade: Canal de Privacidade de
+                  Dados do TC S.A</strong
+                >
+              </h2>
+              <p>
+                O TC S.A conta com um canal digital dedicado à privacidade de
+                Dados, para o qual você poderá encaminhar suas solicitações,
+                dúvidas ou pedidos relacionados a privacidade de Dados.
+              </p>
+              <p>
+                E-mail:
+                <a href="mailto:privacidade@tc.com.br">privacidade@tc.com.br</a>
+              </p>
+              <p></p>
+              <h2><strong>15. Disposições Gerais</strong></h2>
+              <h3>
+                <strong>15.1. Alteração<br /></strong>
+              </h3>
+              <p>
+                Esta Política poderá ser revisada, modificada, emendada ou
+                revogada, a qualquer momento e sem necessidade de aviso prévio,
+                pelo Conselho de Administração da Companhia, principalmente no
+                caso de alteração superveniente nas leis e nos regulamentos a
+                ela aplicados, ou no caso de alguma alteração nas práticas de
+                negócios da Companhia.
+              </p>
+              <p>
+                Qualquer alteração nesta Política será prontamente comunicada a
+                todos: público-alvo, prestadores de serviços, diretores, sócios,
+                contribuidores, e funcionários do TC S.A.
+              </p>
+              <h3><strong>15.2. Conflito</strong></h3>
+              <p>
+                No caso de conflito entre qualquer item desta Política e do
+                Estatuto da Companhia ou outro documento constitutivo das
+                Sociedades, prevalecerá o disposto no Estatuto e nos documentos
+                constitutivos. E no caso de conflito entre qualquer item desta
+                Política e de leis e regulamentos a ela aplicados, prevalecerá o
+                disposto nas leis e nos regulamentos a ela aplicados.
+              </p>
+              <p>
+                Os casos omissos serão decididos pelo Comitê de Ética e de
+                <em>Compliance</em>.
+              </p>
+              <h3><strong>15.3. Autonomia</strong></h3>
+              <p>
+                Caso qualquer item desta Política seja considerado inválido,
+                ineficaz ou ilegal, a sua disposição será limitada, sempre e
+                quando possível, para que a validade, eficácia e legalidade dos
+                demais itens não sejam afetados.
+              </p>
+              <h3><strong>15.4. Vigência</strong></h3>
+              <p>
+                Esta Política está em vigor desde sua publicação nos sites da
+                Companhia, em fevereiro de 2022. Esta Política está em vigor
+                desde sua publicação nos sites da Companhia, em fevereiro de
+                2022.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container-sm container-footer">
+        <div class="logo-social">
+          <div class="logo-contato">
+            <div class="imgs-logo">
+              <img src="./images/logo-white-cambio.png" alt="" />
+            </div>
+
+            <div class="texts-logo-contatos">
+              <h2>Endereço:</h2>
+              <span
+                >R. Leopoldo Couto Magalhães Júnior, 758 - 11° andar - Itaim
+                Bibi, São Paulo - SP, 04542-000</span
+              >
+            </div>
+
+            <div class="texts-logo-contatos">
+              <h2>Telefone:</h2>
+              <span
+                >+55 (11) 9 3282-9554 <br />
+                Nosso time de atendimento está disponível de segunda à
+                sexta-feira, das 09h às 19h.</span
+              >
+            </div>
+
+            <div class="texts-logo-contatos links-footer">
+              <h2>Links:</h2>
+              <span>
+                <!-- <a href="#">Termos Condições</a> -->
+                <a href="/politica.html">Política de privacidade</a></span
+              >
+            </div>
+          </div>
+
+          <div class="redes-sociais-footer">
+            <span>Redes Sociais:</span>
+            <div class="imgs-redes">
+              <img src="./images/icons/insta-white.png" alt="" />
+              <img src="./images/icons/linkedin-white.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="itens-footer-last">
+          <div class="imagem-logo-last">
+            <img src="./images/logo-white-cambio.png" alt="" />
+          </div>
+
+          <div class="infos-last">
+            <div class="texts-logo-contatos">
+              <h2>Endereço:</h2>
+              <span
+                >R. Leopoldo Couto Magalhães Júnior, 758 - 11° andar - Itaim
+                Bibi, São Paulo - SP, 04542-000</span
+              >
+            </div>
+
+            <div class="texts-logo-contatos">
+              <h2>Telefone:</h2>
+              <span
+                >+55 (11) 9 3282-9554 <br />
+                Nosso time de atendimento está disponível de segunda à
+                sexta-feira, das 09h às 19h.</span
+              >
+            </div>
+
+            <div class="texts-logo-contatos links-footer">
+              <h2>Links:</h2>
+              <span
+                ><a href="#">Termos Condições</a>
+                <a href="#">Política de privacidade</a></span
+              >
+            </div>
+
+            <div class="redes-sociais-footer">
+              <span>Redes Sociais:</span>
+              <div class="imgs-redes">
+                <img src="./images/icons/insta-white.png" alt="" />
+                <img src="./images/icons/linkedin-white.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="texts-footer">
+          <span
+            >Nesta parceria o TC Advisory Ltda. (“TC Advisory”), inscrita no
+            CNPJ/ME sob o nº 47.420.288/0001-17, com sede em São Paulo, no
+            Estado de São Paulo, atua na aproximação de clientes para os
+            serviços de câmbio prestados por meio da plataforma da BlueTransfer
+            Tecnologia e Serviços Financeiros Ltda.</span
+          >
+        </div>
+
+        <div class="bluetransfer-bcb">
+          <div class="logo-blue">
+            <img src="./images/bluetransfer-footer.png" alt="" />
+            <span
+              >Bluetransfer Tecnologia e Serviços Financeiros Ltda - CNPJ
+              07.312.585/0001-24, Correspondente Cambial autorizado pelo Banco
+              Cental do Brasil.</span
+            >
+          </div>
+
+          <div class="logo-bcb">
+            <img src="./images/logo-banco-do-brasil.png" alt="" />
+          </div>
+        </div>
+
+        <div class="bluetransfer-bcb-last">
+          <div class="imgs-bluetransfer-bcb-last">
+            <img
+              class="img-blue-last"
+              src="./images/bluetransfer-footer.png"
+              alt=""
+            />
+            <img
+              class="img-bcb-last"
+              src="./images/logo-banco-do-brasil.png"
+              alt=""
+            />
+          </div>
+
+          <span
+            >Bluetransfer Tecnologia e Serviços Financeiros Ltda - CNPJ
+            07.312.585/0001-24, Correspondente Cambial autorizado pelo Banco
+            Cental do Brasil.</span
+          >
+        </div>
+
+        <div class="prisma-cambio">
+          <span>© Todos os direitos reservados 2023 </span>
+          <img src="./images/Selo Prisma.png" alt="" />
+          <div class="voltar-topo" id="voltar-ao-topo">
+            <span>Voltar ao topo</span>
+            <i class="fa-solid fa-arrow-up" style="color: #bbbbbb"></i>
+          </div>
+        </div>
+
+        <div class="prisma-cambio-last">
+          <div class="itens-prisma-last">
+            <span>© Todos os direitos reservados 2023 </span>
+          </div>
+          <div class="voltar-topo" id="voltar-ao-topo">
+            <img src="./images/Selo Prisma.png" alt="" />
+            <span
+              >Voltar ao topo
+              <i class="fa-solid fa-arrow-up" style="color: #bbbbbb"></i
+            ></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"
+    ></script>
+
+    <script defer src="vendor/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script defer src="./js/changeColor.js"></script>
+    <script defer src="vendor/counterup.js"></script>
+    <script defer src="js/carrosel.js"></script>
+    <script defer src="vendor/menuFixo.js"></script>
+    <script defer src="vendor/aos.js"></script>
+    <script defer src="vendor/basic-table.min.js"></script>
+    <script defer src="vendor/slick.min.js"></script>
+    <script defer src="js/zoomScroll.js"></script>
+    <script defer src="js/main.js"></script>
+  </body>
+</html>
