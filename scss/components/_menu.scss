@@ -421,13 +421,14 @@ body {
       .toggle-mobile-menu {
         span {
           transform: rotate(45deg);
-          background: var(--text-white);
+          // background: var(--text-white);
+          background-color: var(--pure-black);
           position: absolute;
           top: 10px;
 
           &::before {
             top: 0;
-            background: var(--text-whtie);
+            background-color: var(--pure-black);
             transform: rotate(90deg);
           }
 

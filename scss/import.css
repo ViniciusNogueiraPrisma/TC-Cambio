@@ -2356,13 +2356,13 @@ body.open-menu::after {
 }
 .mobile-menu-div.active .mobile-menu .toggle-mobile-menu span {
   transform: rotate(45deg);
-  background: var(--text-white);
+  background-color: var(--pure-black);
   position: absolute;
   top: 10px;
 }
 .mobile-menu-div.active .mobile-menu .toggle-mobile-menu span::before {
   top: 0;
-  background: var(--text-whtie);
+  background-color: var(--pure-black);
   transform: rotate(90deg);
 }
 .mobile-menu-div.active .mobile-menu .toggle-mobile-menu span::after {
