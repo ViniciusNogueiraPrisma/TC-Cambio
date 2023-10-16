@@ -9902,6 +9902,9 @@ body {
   display: block;
   width: 200px;
 }
+[data-theme=dark] .qs-texts h2 {
+  color: white !important;
+}
 [data-theme=dark] .img-invista img {
   filter: brightness(1000%);
 }
