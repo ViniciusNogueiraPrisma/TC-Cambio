@@ -6066,11 +6066,11 @@ body.open-menu::after {
 }
 
 .btn-menu-entrar:hover {
-  border: 1.5px solid #B0B0B0;
+  border: 1.5px solid #b0b0b0;
   transition: 0.3s ease;
 }
 .btn-menu-entrar:hover span {
-  color: #B0B0B0;
+  color: #b0b0b0;
   transition: 0.3s ease;
 }
 
@@ -6118,6 +6118,15 @@ body.open-menu::after {
   }
   .btn-nav-item {
     padding-top: 24px;
+  }
+}
+@media (max-width: 325px) {
+  .btn-nav-item {
+    flex-direction: column;
+  }
+  .btn-menu-entrar {
+    align-items: center;
+    justify-content: center;
   }
 }
 @font-face {
