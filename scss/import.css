@@ -4951,6 +4951,7 @@ body.open-menu::after {
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 24px;
+  overflow-y: hidden;
   background-color: #fafafa;
   border-radius: 6px;
   display: flex;
@@ -5189,6 +5190,11 @@ body.open-menu::after {
   align-items: center;
   justify-content: space-between;
   gap: 40px;
+  overflow-y: hidden;
+}
+
+.texts-content {
+  overflow-y: hidden;
 }
 
 .cadastrar-number h1 {
@@ -5507,9 +5513,6 @@ body.open-menu::after {
 }
 
 @media (max-width: 1035px) {
-  .btn-menu-a {
-    display: none;
-  }
   .container-plataforma {
     padding-top: 148px;
   }
@@ -6058,6 +6061,54 @@ body.open-menu::after {
   color: rgb(19, 19, 19);
 }
 
+.btn-nav-item {
+  gap: 24px;
+}
+
+.btn-menu-entrar {
+  border-radius: 2px;
+  border: 1.5px solid black;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.btn-menu-entrar span {
+  color: black;
+  font-size: 16px;
+  font-family: Bw Seido Raw;
+  font-weight: 400;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+.btn-menu-entrar img {
+  width: 15px;
+}
+
+.itens-main-nav {
+  display: flex;
+  gap: 24px;
+}
+
+@media (max-width: 799px) {
+  .itens-main-nav {
+    display: none;
+  }
+}
+@media (max-width: 593px) {
+  .btn-menu-a {
+    margin-left: 0px !important;
+  }
+  .itens-main-nav {
+    display: none;
+  }
+  .btn-nav-item {
+    padding-top: 24px;
+  }
+}
 @font-face {
   font-family: "Bw Seido Raw";
   src: url("../../fonts/Seido/Bw Seido Raw Regular.otf");
