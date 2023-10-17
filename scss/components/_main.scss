@@ -1613,7 +1613,17 @@ $color: #344ff4;
   gap: 24px;
 }
 
+.btn-menu-entrar:hover {
+  border: 1.5px solid #B0B0B0;
+  transition: 0.3s ease;
+  span {
+    color: #B0B0B0;
+    transition: 0.3s ease;
+  }
+}
+
 .btn-menu-entrar {
+  transition: 0.3s ease;
   border-radius: 2px;
   border: 1.5px solid black;
   display: flex;
@@ -1632,6 +1642,7 @@ $color: #344ff4;
     font-weight: 400;
     line-height: 20px;
     word-wrap: break-word;
+    transition: 0.3s ease;
   }
 
   img {
@@ -1639,18 +1650,12 @@ $color: #344ff4;
   }
 }
 
-// @media (max-width: 585px) {
-//   .btn-menu-entrar {
-//     display: none;
-//   }
-// }
-
 .itens-main-nav {
   display: flex;
   gap: 24px;
 }
 
-@media(max-width: 799px) {
+@media (max-width: 799px) {
   .itens-main-nav {
     display: none;
   }
